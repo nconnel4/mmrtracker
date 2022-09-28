@@ -1,0 +1,39 @@
+{
+  "northClockTown": {
+    "name": "North Clock Town",
+    "checks": [
+      "northClockTownTree",
+      "oldLady",
+      "bomberHideAndSeek",
+      "clockTownMap",
+      "woodfallMap",
+      "dekuPlayground",
+      "keatonQuiz",
+      "postbox",
+      "townGreatFairy",
+      "townGreatFairyTransform"
+    ]
+  },
+  "southClockTown": {
+    "name": "South Clock Town",
+    "checks": [
+      "clockTowerEntrance",
+      "clockTownDeckScrubTrade",
+      "southClockTownStrawRoofChest",
+      "southClockTownFialDayChest",
+      "postbox"
+    ]
+  },
+  "mountainVillage": {
+    "name": "Mountain Village",
+    "checks": [
+      "darmani",
+      "hungryGoron",
+      "mountainSmithDay1",
+      "mountainSmithDay2",
+      "mountainSpringGrotto",
+      "mountainWaterfallCave"
+    ]
+  }
+
+}

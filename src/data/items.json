@@ -1,0 +1,553 @@
+{
+  "kokiriSword": {
+    "image": "kokiriSword",
+    "name": "Kokiri Sword",
+    "type": "sword",
+    "active": false,
+    "nextLevel": "razorSword"
+  },
+  "razorSword": {
+    "image": "razorSword",
+    "name": "Razor Sword",
+    "type": "sword",
+    "active": false,
+    "nextLevel": "gildedSword",
+    "previousLevel": "kokiriSword"
+  },
+  "gildedSword": {
+    "image": "gildedSword",
+    "name": "Gilded Sword",
+    "type": "sword",
+    "active": false,
+    "previousLevel": "razorSword"
+  },
+  "hylianShield": {
+    "image": "hylianShield",
+    "name": "Hylian Shield",
+    "type": "shield",
+    "active": false,
+    "nextLevel": "mirrorShield"
+  },
+  "mirrorShield": {
+    "image": "mirrorShield",
+    "name": "Mirror Shield",
+    "type": "shield",
+    "active": false,
+    "previousLevel": "hylianShield"
+  },
+  "ocarina": {
+    "name": "Ocarina of Time",
+    "image": "ocarina",
+    "type": "item",
+    "active": false
+  },
+  "heroBow": {
+    "name": "Hero's Bow",
+    "image": "bow",
+    "type": "bow",
+    "active": false,
+    "label": "30",
+    "nextLevel": "bigQuiver"
+  },
+  "bigQuiver": {
+    "name": "Hero's Bow",
+    "image": "bow",
+    "type": "bow",
+    "active": false,
+    "label": "40",
+    "nextLevel": "biggestQuiver",
+    "previousLevel": "heroBow"
+  },
+  "biggestQuiver": {
+    "name": "Hero's Bow",
+    "image": "bow",
+    "type": "bow",
+    "active": false,
+    "label": "50",
+    "previousLevel": "bigQuiver"
+  },
+  "fireArrow": {
+    "name": "Fire Arrows",
+    "image": "fireArrow",
+    "type": "item",
+    "active": false
+  },
+  "iceArrow": {
+    "name": "Ice Arrows",
+    "image": "iceArrow",
+    "type": "item",
+    "active": false
+  },
+  "lightArrow": {
+    "name": "Light Arrows",
+    "image": "lightArrow",
+    "type": "item",
+    "active": false
+  },
+  "bombBag": {
+    "name": "Bomb Bag",
+    "image": "bomb",
+    "type": "bomb",
+    "active": false,
+    "label": "20",
+    "nextLevel": "bigBombBag"
+  },
+  "bigBombBag": {
+    "name": "Bomb Bag",
+    "image": "bomb",
+    "type": "bomb",
+    "active": false,
+    "label": "30",
+    "nextLevel": "biggerBombBag",
+    "previousLevel": "bombBag"
+  },
+  "biggerBombBag": {
+    "name": "Bomb Bag",
+    "image": "bomb",
+    "type": "bomb",
+    "active": false,
+    "label": "40",
+    "previousLevel": "biggerBombBag"
+  },
+  "bombchu": {
+    "name": "Bombchu",
+    "image": "bombchu",
+    "type": "item",
+    "active": false
+  },
+  "dekuStick": {
+    "name": "Deku Stick",
+    "image": "dekuStick",
+    "type": "item",
+    "active": false
+  },
+  "dekuNut": {
+    "name": "Deku Nut",
+    "image": "dekuNut",
+    "type": "item",
+    "active": false
+  },
+  "magicBean": {
+    "name": "Magic Bean",
+    "image": "magicBean",
+    "type": "item",
+    "active": false
+  },
+  "powderKeg": {
+    "name": "Powder Keg",
+    "image": "powderKeg",
+    "type": "item",
+    "active": false
+  },
+  "pictographBox": {
+    "name": "Pictograph Box",
+    "image": "pictographBox",
+    "type": "item",
+    "active": false
+  },
+  "lensOfTruth": {
+    "name": "Lens of Truth",
+    "image": "lensOfTruth",
+    "type": "item",
+    "active": false
+  },
+  "hookshot": {
+    "name": "Hookshot",
+    "image": "hookshot",
+    "type": "item",
+    "active": false
+  },
+  "greatFairySword": {
+    "name": "Great Fairy Sword",
+    "image": "greatFairySword",
+    "type": "item",
+    "active": false
+  },
+  "bottle1": {
+    "name": "Bottle",
+    "image": "bottle",
+    "type": "bottle",
+    "active": false,
+    "label": "1",
+    "nextLevel": "bottle2"
+  },
+  "bottle2": {
+    "name": "Bottle",
+    "image": "bottle",
+    "type": "bottle",
+    "active": false,
+    "label": "2",
+    "nextLevel": "bottle3",
+    "previousLevel": "bottle1"
+  },
+  "bottle3": {
+    "name": "Bottle",
+    "image": "bottle",
+    "type": "bottle",
+    "active": false,
+    "label": "3",
+    "nextLevel": "bottle4",
+    "previousLevel": "bottle2"
+  },
+  "bottle4": {
+    "name": "Bottle",
+    "image": "bottle",
+    "type": "bottle",
+    "active": false,
+    "label": "4",
+    "nextLevel": "bottle5",
+    "previousLevel": "bottle3"
+  },
+  "bottle5": {
+    "name": "Bottle",
+    "image": "bottle",
+    "type": "bottle",
+    "active": false,
+    "label": "5",
+    "nextLevel": "bottle6",
+    "previousLevel": "bottle4"
+  },
+  "bottle6": {
+    "name": "Bottle",
+    "image": "bottle",
+    "type": "bottle",
+    "active": false,
+    "label": "6",
+    "previousLevel": "bottle5"
+  },
+  "goldDust": {
+    "name": "Gold Dust",
+    "image": "goldDust",
+    "type": "item",
+    "active": false
+  },
+  "postmanHat": {
+    "name": "Postman's Hat",
+    "image": "postmanHat",
+    "type": "mask",
+    "active": false
+  },
+  "allNightMask": {
+    "name": "All-Night Mask",
+    "image": "allNightMask",
+    "type": "mask",
+    "active": false
+  },
+  "blastMask": {
+    "name": "Blast Mask",
+    "image": "blastMask",
+    "type": "mask",
+    "active": false
+  },
+  "stoneMask": {
+    "name": "Stone Mask",
+    "image": "stoneMask",
+    "type": "mask",
+    "active": false
+  },
+  "greatFairyMask": {
+    "name": "Great Fairy Mask",
+    "image": "greatFairyMask",
+    "type": "mask",
+    "active": false
+  },
+  "dekuMask": {
+    "name": "Deku Mask",
+    "image": "dekuMask",
+    "type": "mask",
+    "active": false
+  },
+  "keatonMask": {
+    "name": "Keaton Mask",
+    "image": "keatonMask",
+    "type": "mask",
+    "active": false
+  },
+  "bremenMask": {
+    "name": "Bremen Mask",
+    "image": "bremenMask",
+    "type": "mask",
+    "active": false
+  },
+  "bunnyHood": {
+    "name": "Bunny Hood",
+    "image": "bunnyHood",
+    "type": "mask",
+    "active": false
+  },
+  "donGeroMask": {
+    "name": "Don Gero Mask",
+    "image": "donGeroMask",
+    "type": "mask",
+    "active": false
+  },
+  "maskOfScents": {
+    "name": "Mask of Scents",
+    "image": "maskOfScents",
+    "type": "mask",
+    "active": false
+  },
+  "goronMask": {
+    "name": "Goron Mask",
+    "image": "goronMask",
+    "type": "mask",
+    "active": false
+  },
+  "romaniMask": {
+    "name": "Romani's Mask",
+    "image": "romaniMask",
+    "type": "mask",
+    "active": false
+  },
+  "circusLeaderMask": {
+    "name": "Circus Leader's Mask",
+    "image": "circusLeaderMask",
+    "type": "mask",
+    "active": false
+  },
+  "kafeiMask": {
+    "name": "Kafei's Mask",
+    "image": "kafeiMask",
+    "type": "mask",
+    "active": false
+  },
+  "coupleMask": {
+    "name": "Couple's Mask",
+    "image": "coupleMask",
+    "type": "mask",
+    "active": false
+  },
+  "maskOfTruth": {
+    "name": "Mask of Truth",
+    "image": "maskOfTruth",
+    "type": "mask",
+    "active": false
+  },
+  "zoraMask": {
+    "name": "Zora Mask",
+    "image": "zoraMask",
+    "type": "mask",
+    "active": false
+  },
+  "kamaroMask": {
+    "name": "Kamaro's Mask",
+    "image": "kamaroMask",
+    "type": "mask",
+    "active": false
+  },
+  "gibdoMask": {
+    "name": "Gibdo Mask",
+    "image": "gibdoMask",
+    "type": "mask",
+    "active": false
+  },
+  "garoMask": {
+    "name": "Garo Mask",
+    "image": "garoMask",
+    "type": "mask",
+    "active": false
+  },
+  "captainHat": {
+    "name": "Captain's Hat",
+    "image": "captainHat",
+    "type": "mask",
+    "active": false
+  },
+  "giantMask": {
+    "name": "Giant's Mask",
+    "image": "giantMask",
+    "type": "mask",
+    "active": false
+  },
+  "fierceDeityMask": {
+    "name": "Fierce Deity Mask",
+    "image": "fierceDeityMask",
+    "type": "mask",
+    "active": false
+  },
+  "bomberNotebook": {
+    "name": "Bomber's Notebook",
+    "image": "bomberNotebook",
+    "type": "quest",
+    "active": false
+  },
+  "moonTear": {
+    "name": "Moon's Tear",
+    "image": "moonTear",
+    "type": "quest",
+    "active": false
+  },
+  "landTitleDeed": {
+    "name": "Land Title Deed",
+    "image": "landTitleDeed",
+    "type": "quest",
+    "active": false
+  },
+  "swampTitleDeed": {
+    "name": "Swamp Title Deed",
+    "image": "swampTitleDeed",
+    "type": "quest",
+    "active": false
+  },
+  "mountainTitleDeed": {
+    "name": "Mountain Title Deed",
+    "image": "mountainTitleDeed",
+    "type": "quest",
+    "active": false
+  },
+  "oceanTitleDeed": {
+    "name": "Ocean Title Deed",
+    "image": "oceanTitleDeed",
+    "type": "quest",
+    "active": false
+  },
+  "roomKey": {
+    "name": "Room Key",
+    "image": "roomKey",
+    "type": "quest",
+    "active": false
+  },
+  "kafeiLetter": {
+    "name": "Letter to Kafei",
+    "image": "kafeiLetter",
+    "type": "quest",
+    "active": false
+  },
+  "pendantOfMemories": {
+    "name": "Pendant of Memories",
+    "image": "pendantOfMemories",
+    "type": "quest",
+    "active": false
+  },
+  "letterToMama": {
+    "name": "Letter to Mama",
+    "image": "letterToMama",
+    "type": "quest",
+    "active": false
+  },
+  "odolwaRemains": {
+    "name": "Odolwa's Remains",
+    "image": "odolwaRemains",
+    "type": "remains",
+    "active": false
+  },
+  "gohtRemains": {
+    "name": "Goht's Remains",
+    "image": "gohtRemains",
+    "type": "remains",
+    "active": false
+  },
+  "gyorgRemains": {
+    "name": "Gyorg's Remains",
+    "image": "gyorgRemains",
+    "type": "remains",
+    "active": false
+  },
+  "twinmoldRemains": {
+    "name": "Twinmold's Remains",
+    "image": "twinmoldRemains",
+    "type": "remains",
+    "active": false
+  },
+  "magic": {
+    "name": "Magic",
+    "image": "magic",
+    "type": "item",
+    "active": false
+  },
+  "wallet": {
+    "name": "Wallet",
+    "image": "wallet",
+    "type": "wallet",
+    "active": true,
+    "label": "99",
+    "nextLevel": "adultWallet"
+  },
+  "adultWallet": {
+    "name": "Adult Wallet",
+    "image": "wallet",
+    "type": "wallet",
+    "active": false,
+    "label": "200",
+    "nextLevel": "giantWallet",
+    "previousLevel": "wallet"
+  },
+  "giantWallet": {
+    "name": "Giant Wallet",
+    "image": "wallet",
+    "type": "wallet",
+    "active": false,
+    "label": "500",
+    "previousLevel": "adultWallet"
+  },
+  "songOfTime": {
+    "name": "Song of Time",
+    "image": "grayNote",
+    "type": "song",
+    "active": false,
+    "label": "Time"
+  },
+  "songOfHealing": {
+    "name": "Song of Healing",
+    "image": "grayNote",
+    "type": "song",
+    "active": false,
+    "label": "Heal"
+  },
+  "eponaSong": {
+    "name": "Epona's Song",
+    "image": "grayNote",
+    "type": "song",
+    "active": false,
+    "label": "Epona"
+  },
+  "songOfSoaring": {
+    "name": "Song of Soaring",
+    "image": "grayNote",
+    "type": "song",
+    "active": false,
+    "label": "Soar"
+  },
+  "songOfStorms": {
+    "name": "Song of Storms",
+    "image": "grayNote",
+    "type": "song",
+    "active": false,
+    "label": "Storms"
+  },
+  "sonataOfAwakening": {
+    "name": "Sonata of Awakening",
+    "image": "greenNote",
+    "type": "song",
+    "active": false,
+    "label": "SOA"
+  },
+  "goronLullaby": {
+    "name": "Goron Lullaby",
+    "image": "redNote",
+    "type": "song",
+    "active": false,
+    "label": "Goron"
+  },
+  "newWaveBossaNova": {
+    "name": "New Wave Bossa Nova",
+    "image": "blueNote",
+    "type": "song",
+    "active": false,
+    "label": "Wave"
+  },
+  "elegyOfEmptiness": {
+    "name": "Elegy of Emptiness",
+    "image": "orangeNote",
+    "type": "song",
+    "active": false,
+    "label": "Elegy"
+  },
+  "oathToOrder": {
+    "name": "Oath to Order",
+    "image": "purpleNote",
+    "type": "song",
+    "active": false,
+    "label": "Oath"
+  }
+}

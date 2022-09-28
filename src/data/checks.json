@@ -1,0 +1,251 @@
+[
+  {
+    "id": "northClockTownTree",
+    "name": "North Clock Town Tree",
+    "zone": "northClockTown",
+    "active": false,
+    "complete": false,
+    "requirements": []
+  },
+  {
+    "id": "oldLady",
+    "name": "Old Lady",
+    "active": false,
+    "complete": false,
+    "requirements": []
+  },
+  {
+    "id": "bomberHideAndSeek",
+    "name": "Bomber's Hide and Seek",
+    "active": false,
+    "complete": false,
+    "requirements": [
+      "hasProjectile"
+    ]
+  },
+  {
+    "id": "clockTownMap",
+    "name": "Clock Town Map Purchase",
+    "active": false,
+    "complete": false,
+    "requirements": [
+      "hasProjectile"
+    ]
+  },
+  {
+    "id": "woodfallMap",
+    "name": "Woodfall Map Purchase",
+    "active": false,
+    "complete": false,
+    "requirements": [
+      "hasProjectile"
+    ]
+  },
+  {
+    "id": "dekuPlayground",
+    "name": "Deku Playground",
+    "active": false,
+    "complete": false,
+    "requirements": [
+
+        "dekuMask"
+
+    ]
+  },
+  {
+    "id": "keatonQuiz",
+    "name": "Keaton Quiz",
+    "active": false,
+    "complete": false,
+    "requirements": [
+      "keatonMask"
+    ]
+  },
+  {
+    "id": "postbox",
+    "name": "Postbox",
+    "active": false,
+    "complete": false,
+    "requirements": [
+      "postmanHat"
+    ]
+  },
+  {
+    "id": "townGreatFairy",
+    "name": "Town Great Fairy",
+    "active": false,
+    "complete": false,
+    "requirements": []
+  },
+  {
+    "id": "townGreatFairyTransform",
+    "name": "Town Great Fairy Non-Human",
+    "active": false,
+    "complete": false,
+    "requirements": [
+      [
+        "dekuMask",
+        "goronMask",
+        "zoraMask"
+      ]
+    ]
+  },
+  {
+    "id": "clockTowerEntrance",
+    "name": "Clock Tower Entrance",
+    "active": false,
+    "complete": false,
+    "requirements": []
+  },
+  {
+    "id": "clockTownDekuScrubTrade",
+    "name": "Clock Town Deku Scrub Trade",
+    "active": false,
+    "complete": false,
+    "requirements": [
+      "moonTear"
+    ]
+  },
+  {
+    "id": "southClockTownStrawRoofChest",
+    "name": "South Clock Town Straw Roof Chest",
+    "active": false,
+    "complete": false,
+    "requirements": [
+      [
+        "hookshot",
+        "dekuMask"
+      ]
+    ]
+  },
+  {
+    "id": "southClockTownFinalDayChest",
+    "name": "South Clock Town Final Day Chest",
+    "active": false,
+    "complete": false,
+    "requirements": [
+      [
+        "hookshot",
+        "dekuMask"
+      ]
+    ]
+  },
+  {
+    "id": "darmani",
+    "name": "Darmani",
+    "active": false,
+    "complete": false,
+    "requirements": [
+      "lensOfTruth",
+      "songOfHealing",
+      "ocarina"
+    ]
+  },
+  {
+    "id": "hungryGoron",
+    "name": "Hungry Goron",
+    "active": false,
+    "complete": false,
+    "requirements": [
+      [
+        "heroBow",
+        "goronMask"
+      ]
+    ]
+  },
+  {
+    "id": "mountainSmithDay1",
+    "name": "Mountain Smithy Day 1",
+    "active": false,
+    "complete": false,
+    "requirements": [
+      [
+        "heroBow",
+        "bottle1",
+        "adultWallet"
+      ],
+      [
+        "heroBow",
+        "fireArrow",
+        "adultWallet"
+      ],
+      [
+        "heroBow",
+        "goronLullaby",
+        "goronMask",
+        "gohtRemains",
+        "adultWallet"
+      ],
+      [
+        "heroBow",
+        "bottle1",
+        "giantWallet"
+      ],
+      [
+        "heroBow",
+        "fireArrow",
+        "giantWallet"
+      ],
+      [
+        "heroBow",
+        "goronLullaby",
+        "goronMask",
+        "gohtRemains",
+        "giantWallet"
+      ]
+    ],
+    "walletLevel": 1
+  },
+  {
+    "id": "mountainSmithDay2",
+    "name": "mountain Smith Day 2",
+    "active": false,
+    "complete": false,
+    "requirements": [
+      [
+        "heroBow",
+        "bottle1",
+        "goldDust"
+      ],
+      [
+        "heroBow",
+        "fireArrow",
+        "goldDust"
+      ],
+      [
+        "heroBow",
+        "goronLullaby",
+        "goronMask",
+        "gohtRemains"
+      ]
+    ]
+  },
+  {
+    "id": "mountainSpringGrotto",
+    "name": "Mountain Spring Grotto",
+    "active": false,
+    "complete": false,
+    "requirements": [
+      [
+        "heroBow",
+        "goronMask",
+        "goronLullaby",
+        "gohtRemains"
+      ]
+    ]
+  },
+  {
+    "id": "mountainWaterfallCave",
+    "name": "Mountain Waterfall Cave",
+    "active": false,
+    "complete": false,
+    "requirements": [
+      [
+        "heroBow",
+        "goronMask",
+        "goronLullaby",
+        "gohtRemains"
+      ]
+    ]
+  }
+]
