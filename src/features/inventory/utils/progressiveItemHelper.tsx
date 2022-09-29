@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import { useAppSelector } from '@/hooks/useAppSelector';
 
-import { Item } from '../components/item';
+import { Item } from '../components';
 
 export const getProgressionLevel = (items: string[]) => {
   let activeItem = '';

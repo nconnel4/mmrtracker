@@ -1,251 +1,495 @@
-[
-  {
-    "id": "northClockTownTree",
+{
+  "northClockTownTree": {
     "name": "North Clock Town Tree",
-    "zone": "northClockTown",
     "active": false,
     "complete": false,
-    "requirements": []
+    "requiredFlags": [],
+    "requiredItems": []
   },
-  {
-    "id": "oldLady",
+  "oldLady": {
     "name": "Old Lady",
     "active": false,
     "complete": false,
-    "requirements": []
+    "requiredFlags": [],
+    "requiredItems": []
   },
-  {
-    "id": "bomberHideAndSeek",
+  "bomberHideAndSeek": {
     "name": "Bomber's Hide and Seek",
     "active": false,
     "complete": false,
-    "requirements": [
-      "hasProjectile"
-    ]
+    "requiredFlags": ["hasProjectile"],
+    "requiredItems": []
   },
-  {
-    "id": "clockTownMap",
+  "clockTownMap": {
     "name": "Clock Town Map Purchase",
     "active": false,
     "complete": false,
-    "requirements": [
-      "hasProjectile"
-    ]
+    "requiredFlags": ["hasProjectile"],
+    "requiredItems": []
   },
-  {
-    "id": "woodfallMap",
+  "woodfallMap": {
     "name": "Woodfall Map Purchase",
     "active": false,
     "complete": false,
-    "requirements": [
-      "hasProjectile"
-    ]
+    "requiredFlags": ["hasProjectile"],
+    "requiredItems": []
   },
-  {
-    "id": "dekuPlayground",
+  "dekuPlayground": {
     "name": "Deku Playground",
     "active": false,
     "complete": false,
-    "requirements": [
-
-        "dekuMask"
-
-    ]
+    "requiredFlags": [],
+    "requiredItems": ["dekuMask"]
   },
-  {
-    "id": "keatonQuiz",
+  "keatonQuiz": {
     "name": "Keaton Quiz",
     "active": false,
     "complete": false,
-    "requirements": [
-      "keatonMask"
-    ]
+    "requiredFlags": [],
+    "requiredItems": ["keatonMask"]
   },
-  {
-    "id": "postbox",
+  "postBox": {
     "name": "Postbox",
     "active": false,
     "complete": false,
-    "requirements": [
-      "postmanHat"
-    ]
+    "requiredFlags": [],
+    "requiredItems": ["postmanHat"]
   },
-  {
-    "id": "townGreatFairy",
+  "townGreatFairy": {
     "name": "Town Great Fairy",
     "active": false,
     "complete": false,
-    "requirements": []
+    "requiredFlags": [],
+    "requiredItems": []
   },
-  {
-    "id": "townGreatFairyTransform",
+  "townGreatFairyTransform": {
     "name": "Town Great Fairy Non-Human",
     "active": false,
     "complete": false,
-    "requirements": [
-      [
-        "dekuMask",
-        "goronMask",
-        "zoraMask"
-      ]
-    ]
+    "requiredFlags": [],
+    "requiredItems": [["dekuMask", "goronMask", "zoraMask"]]
   },
-  {
-    "id": "clockTowerEntrance",
+  "clockTowerEntrance": {
     "name": "Clock Tower Entrance",
     "active": false,
     "complete": false,
-    "requirements": []
+    "requiredFlags": [],
+    "requiredItems": []
   },
-  {
-    "id": "clockTownDekuScrubTrade",
+  "clockTownDekuScrubTrade": {
     "name": "Clock Town Deku Scrub Trade",
     "active": false,
     "complete": false,
-    "requirements": [
-      "moonTear"
-    ]
+    "requiredFlags": [],
+    "requiredItems": ["moonTear"]
   },
-  {
-    "id": "southClockTownStrawRoofChest",
+  "southClockTownStrawRoofChest": {
     "name": "South Clock Town Straw Roof Chest",
     "active": false,
     "complete": false,
-    "requirements": [
-      [
-        "hookshot",
-        "dekuMask"
-      ]
-    ]
+    "requiredFlags": [],
+    "requiredItems": [["hookshot", "dekuMask"]]
   },
-  {
-    "id": "southClockTownFinalDayChest",
+  "southClockTownFinalDayChest": {
     "name": "South Clock Town Final Day Chest",
     "active": false,
     "complete": false,
-    "requirements": [
-      [
-        "hookshot",
-        "dekuMask"
-      ]
-    ]
+    "requiredFlags": [],
+    "requiredItems": [["hookshot", "dekuMask"]]
   },
-  {
-    "id": "darmani",
+  "bomberHideoutChest": {
+    "name": "Bombers' Hide and Seek",
+    "active": false,
+    "complete": false,
+    "requiredFlags": ["hasProjectile", "hasExplosives"],
+    "requiredItems": []
+  },
+  "darmani": {
     "name": "Darmani",
     "active": false,
     "complete": false,
-    "requirements": [
-      "lensOfTruth",
-      "songOfHealing",
-      "ocarina"
-    ]
+    "requiredFlags": ["hasNorthAccess"],
+    "requiredItems": ["lensOfTruth", "songOfHealing", "ocarina"]
   },
-  {
-    "id": "hungryGoron",
+  "hungryGoron": {
     "name": "Hungry Goron",
     "active": false,
     "complete": false,
-    "requirements": [
-      [
-        "heroBow",
-        "goronMask"
-      ]
-    ]
+    "requiredFlags": ["hasNorthAccess"],
+    "requiredItems": ["goronMask"]
   },
-  {
-    "id": "mountainSmithDay1",
+  "mountainSmithDay1": {
     "name": "Mountain Smithy Day 1",
     "active": false,
     "complete": false,
-    "requirements": [
-      [
-        "heroBow",
-        "bottle1",
-        "adultWallet"
-      ],
-      [
-        "heroBow",
-        "fireArrow",
-        "adultWallet"
-      ],
-      [
-        "heroBow",
-        "goronLullaby",
-        "goronMask",
-        "gohtRemains",
-        "adultWallet"
-      ],
-      [
-        "heroBow",
-        "bottle1",
-        "giantWallet"
-      ],
-      [
-        "heroBow",
-        "fireArrow",
-        "giantWallet"
-      ],
-      [
-        "heroBow",
-        "goronLullaby",
-        "goronMask",
-        "gohtRemains",
-        "giantWallet"
-      ]
-    ],
-    "walletLevel": 1
+    "requiredFlags": ["hasNorthAccess", "canMeltIce"],
+    "requiredItems": ["adultWallet"]
   },
-  {
-    "id": "mountainSmithDay2",
+  "mountainSmithDay2": {
     "name": "mountain Smith Day 2",
     "active": false,
     "complete": false,
-    "requirements": [
-      [
-        "heroBow",
-        "bottle1",
-        "goldDust"
-      ],
-      [
-        "heroBow",
-        "fireArrow",
-        "goldDust"
-      ],
-      [
-        "heroBow",
-        "goronLullaby",
-        "goronMask",
-        "gohtRemains"
-      ]
-    ]
+    "requiredFlags": ["hasNorthAccess"],
+    "requiredItems": ["goldDust"]
   },
-  {
-    "id": "mountainSpringGrotto",
+  "mountainSpringGrotto": {
     "name": "Mountain Spring Grotto",
     "active": false,
     "complete": false,
-    "requirements": [
-      [
-        "heroBow",
-        "goronMask",
-        "goronLullaby",
-        "gohtRemains"
-      ]
-    ]
+    "requiredFlags": ["hasSnowHeadAccess"],
+    "requiredItems": ["gohtRemains"]
   },
-  {
-    "id": "mountainWaterfallCave",
+  "mountainWaterfallCave": {
     "name": "Mountain Waterfall Cave",
     "active": false,
     "complete": false,
-    "requirements": [
+    "requiredFlags": ["hasSnowHeadAccess"],
+    "requiredItems": ["gohtRemains"]
+  },
+  "bomberHideOutChest": {
+    "name": "Bomber's Hideout Chest",
+    "active": false,
+    "complete": false,
+    "requiredFlags": ["hasProjectile", "hasExplosives"],
+    "requiredItems": []
+  },
+  "eastClockTownChest": {
+    "name": "East Clock Town Chest",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": []
+  },
+  "gorman": {
+    "name": "Gorman",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": ["dekuMask", "zoraMask", "goronMask", "ocarina", "romaniMask"]
+  },
+  "honeyAndDarlingAnyDay": {
+    "name": "Honey and Darling Any Day",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": [["dekuMask", "heroBow", "bombBag"]]
+  },
+  "madameAromaBar": {
+    "name": "Madame Aroma in Bar",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": ["kafeiMask", "letterToMama"]
+  },
+  "madameAromaOffice": {
+    "name": "Madame Aroma in Office",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": []
+  },
+  "mayor": {
+    "name": "Mayor",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": ["coupleMask"]
+  },
+  "milkBarChateauPurchase": {
+    "name": "Milk Bar Chateau Purchase",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": ["romaniMask", "adultWallet"]
+  },
+  "milkBarMilkPurchase": {
+    "name": "Milk Bar Milk Purchase",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": ["romaniMask"]
+  },
+  "postmanFreedom": {
+    "name": "Postman's Freedom",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": ["letterToMama"]
+  },
+  "townArchery1": {
+    "name": "Town Archery #1",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": ["heroBow"]
+  },
+  "treasureChestGameGoron": {
+    "name": "Treasure Chest Game Goron",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": ["goronMask"]
+  },
+  "grandmaLongStory": {
+    "name": "Grandma Long Story",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": ["allNightMask"]
+  },
+  "grandmaShortStory": {
+    "name": "Grandma Short Story",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": ["allNightMask"]
+  },
+  "innGuestRoom": {
+    "name": "Inn Guest Room Chest",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": ["roomKey"]
+  },
+  "innReservation": {
+    "name": "Inn Reservation",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": []
+  },
+  "innStaffRoom": {
+    "name": "Inn Staff Room Chest",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": []
+  },
+  "midnightMeeting": {
+    "name": "Midnight Meeting",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": [["dekuMask", "roomKey"], "kafeiMask"]
+  },
+  "toiletHand": {
+    "name": "Toilet Hand",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": [
       [
-        "heroBow",
-        "goronMask",
-        "goronLullaby",
-        "gohtRemains"
-      ]
+        "letterToMama",
+        "kafeiLetter",
+        "landTitleDeed",
+        "swampTitleDeed",
+        "mountainTitleDeed",
+        "oceanTitleDeed"
+      ],
+      ["dekuMask", "roomKey"]
     ]
+  },
+  "allNightMaskPurchase": {
+    "name": "All Night Mask Purchase",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": ["giantWallet"]
+  },
+  "bank1": {
+    "name": "Bank Reward #1",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": []
+  },
+  "bank2": {
+    "name": "Bank Reward #2",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": ["adultWallet"]
+  },
+  "bank3": {
+    "name": "Bank Reward #3",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": ["giantWallet"]
+  },
+  "bigBombBagPurchase": {
+    "name": "Big Bomb Bag Purchase",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": []
+  },
+  "bombBagPurchase": {
+    "name": "Bomb Bag Purchase",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": []
+  },
+  "postmanGame": {
+    "name": "Postman's Game",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": ["bunnyHood"]
+  },
+  "rosaSister": {
+    "name": "Rosa Sisters",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": ["kamaroMask"]
+  },
+  "swordmanSchool": {
+    "name": "Swordman's School",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": []
+  },
+  "curiosityShopMan1": {
+    "name": "Curiosity Shop Man #1",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": ["kafeiLetter"]
+  },
+  "curiosityShopMan2": {
+    "name": "Curiosity Shop Man #2",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": ["kafeiLetter"]
+  },
+  "guruGuru": {
+    "name": "Guru Guru",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": []
+  },
+  "kafei": {
+    "name": "Kafei",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": ["kafeiLetter"]
+  },
+  "astronomyTelescope": {
+    "name": "Astronomy Telescope",
+    "active": false,
+    "complete": false,
+    "requiredFlags": ["hasProjectile"],
+    "requiredItems": []
+  },
+  "bioBabaGrotto": {
+    "name": "Bio Baba Grotto",
+    "active": false,
+    "complete": false,
+    "requiredFlags": ["canBreakRocks"],
+    "requiredItems": ["zoraMask"]
+  },
+  "businessScrubPurchase": {
+    "name": "Business Scrub Purchase",
+    "active": false,
+    "complete": false,
+    "requiredFlags": ["hasProjectile"],
+    "requiredItems": ["adultWallet"]
+  },
+  "dodongoGrotto": {
+    "name": "Dodongo Grotto",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": []
+  },
+  "gossipStones": {
+    "name": "Gossig Stones",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": []
+  }, 
+  "kamaro": {
+    "name": "Kamaro",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": ["ocarina", "songOfHealing"]
+  },
+  "peahatGrotto": {
+    "name": "Peahat Grotto",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": []
+  },
+  "terminaFieldGrassChest": {
+    "name": "Termina Field Grass Chest",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": []
+  },
+  "terminaFieldGrassGrotto": {
+    "name": "Termina Field Grass Grotto",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": []
+  },
+  "terminaFieldPillarGrotto": {
+    "name": "Termina Field Pillar Grotto",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": []
+  },
+  "terminaFieldStumpChest": {
+    "name": "Termina Field Stump Chest",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": []
+  },
+  "terminaFieldUnderwaterChest": {
+    "name": "Termina Field Underwater Chest",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": ["zoraMask"]
+  },
+  "swampPathGrotto": {
+    "name": "Path to Swamp Grotto",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": []
+  },
+  "swampPathTree": {
+    "name": "Path to Swamp Tree",
+    "active": false,
+    "complete": false,
+    "requiredFlags": ["hasProjectile"],
+    "requiredItems": []
+  },
+  "swampArchery1": {
+    "name": "Swamp Archery #1",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": ["heroBow"]
+  },
+  "snowheadMap": {
+    "name": "Snowhead Map Purchase",
+    "active": false,
+    "complete": false,
+    "requiredFlags": ["hasProjectile"],
+    "requiredItems": []
   }
-]
+}

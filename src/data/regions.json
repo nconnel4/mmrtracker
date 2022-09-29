@@ -1,0 +1,211 @@
+{
+  "southClockTown": {
+    "name": "South Clock Town",
+    "checks": [
+      "clockTowerEntrance",
+      "clockTownDekuScrubTrade",
+      "southClockTownStrawRoofChest",
+      "southClockTownFinalDayChest",
+      "postBox"
+    ]
+  },
+  "northClockTown": {
+    "name": "North Clock Town",
+    "checks": [
+      "northClockTownTree",
+      "oldLady",
+      "bomberHideAndSeek",
+      "clockTownMap",
+      "woodfallMap",
+      "dekuPlayground",
+      "keatonQuiz",
+      "postBox",
+      "townGreatFairy",
+      "townGreatFairyTransform"
+    ]
+  },
+  "eastClockTown": {
+    "name": "East Clock Town",
+    "checks": [
+      "bomberHideoutChest",
+      "eastClockTownChest",
+      "gorman",
+      "honeyAndDarlingAnyDay",
+      "madameAromaBar",
+      "madameAromaOffice",
+      "mayor",
+      "milkBarChateauPurchase",
+      "milkBarMilkPurchase",
+      "postBox",
+      "postmanFreedom",
+      "townArchery1",
+      "treasureChestGameGoron"
+    ]
+  },
+  "stockPotInn": {
+    "name": "Stock Pot Inn",
+    "checks": [
+      "grandmaLongStory",
+      "grandmaShortStory",
+      "innGuestRoom",
+      "innReservation",
+      "innStaffRoom",
+      "midnightMeeting",
+      "toiletHand"
+    ]
+  },
+  "westClockTown": {
+    "name": "West Clock Town",
+    "checks": [
+      "allNightMaskPurchase",
+      "bank1",
+      "bank2",
+      "bank3",
+      "bombBagPurchase",
+      "bigBombBagPurchase",
+      "postmanGame",
+      "rosaSister",
+      "swordmanSchool"
+    ]
+  },
+  "laundryPool": {
+    "name": "Laundry Pool",
+    "checks": ["guruGuru", "kafei", "curiosityShopMan1", "curiosityShopMan2"]
+  },
+  "terminaField": {
+    "name": "Termina Field",
+    "checks": [
+      "astronomyTelescope",
+      "bioBabaGrotto",
+      "dodongoGrotto",
+      "gossipStones",
+      "kamaro",
+      "peahatGrotto",
+      "terminaFieldGrassChest",
+      "terminaFieldGrassGrotto",
+      "terminaFieldPillarGrotto",
+      "terminaFieldStumpChest",
+      "terminaFieldUnderwaterChest"
+    ]
+  },
+  "roadSouthernSwamp": {
+    "name": "Road to Southern Swamp",
+    "checks": ["swampPathGrotto", "swampPathTree", "swampArchery1", "woodfallMap", "snowheadMap"]
+  },
+  "southernSwamp": {
+    "name": "Southern Swamp",
+    "checks": []
+  },
+  "dekuPalace": {
+    "name": "Deku Palace",
+    "checks": []
+  },
+  "woodfall": {
+    "name": "Woodfall",
+    "checks": []
+  },
+
+  "woodfallTemple": {
+    "name": "Woodfall Temple",
+    "checks": []
+  },
+  "mountainVillage": {
+    "name": "Mountain Village",
+    "checks": [
+      "darmani",
+      "hungryGoron",
+      "mountainSmithDay1",
+      "mountainSmithDay2",
+      "mountainSpringGrotto",
+      "mountainWaterfallCave"
+    ]
+  },
+  "twinIslands": {
+    "name": "Twin Islands",
+    "checks": []
+  },
+  "goronVillage": {
+    "name": "Goron Village",
+    "checks": []
+  },
+  "pathSnowhead": {
+    "name": "Path to Snowhead",
+    "checks": []
+  },
+  "snowheadTemple": {
+    "name": "Snowhead Temple",
+    "checks": []
+  },
+  "milkRoad": {
+    "name": "Milk Road",
+    "checks": []
+  },
+  "romaniRanch": {
+    "name": "Romani Ranch",
+    "checks": []
+  },
+  "greatBayCoast": {
+    "name": "Great Bay Coast",
+    "checks": []
+  },
+  "zoraCape": {
+    "name": "Zora Cape",
+    "checks": []
+  },
+  "zoraHall": {
+    "name": "Zora Hall",
+    "checks": []
+  },
+  "pirateFortressExterior": {
+    "name": "Pirate's Fortress Exterior",
+    "checks": []
+  },
+  "pirateFortressSewer": {
+    "name": "Pirate's Fortress Sewer",
+    "checks": []
+  },
+  "pirateFortressInterior": {
+    "name": "Pirate's Fortress Interior",
+    "checks": []
+  },
+  "pinnacleRock": {
+    "name": "Pinnacle Rock",
+    "checks": []
+  },
+  "greatBayTemple": {
+    "name": "Great Bay Temple",
+    "checks": []
+  },
+  "roadIkana": {
+    "name": "Road to Ikana",
+    "checks": []
+  },
+  "ikanaGraveyard": {
+    "name": "Ikana Graveyard",
+    "checks": []
+  },
+  "ikanaCanyon": {
+    "name": "Ikana Canyon",
+    "checks": []
+  },
+  "beneathWell": {
+    "name": "Beneath the Well",
+    "checks": []
+  },
+  "ikanaCastle": {
+    "name": "Ikana Castle",
+    "checks": []
+  },
+  "stoneTower": {
+    "name": "Stone Tower",
+    "checks": []
+  },
+  "stoneTowerTemple": {
+    "name": "Stone Tower Temple",
+    "checks": []
+  },
+  "secretShrine": {
+    "name": "Secret Shrine",
+    "checks": []
+  }
+}

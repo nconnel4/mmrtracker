@@ -1,2 +1,2 @@
-export * from './item';
-export * from './itemGrid';
+export * from './Item';
+export * from './ItemGrid';

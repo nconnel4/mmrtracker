@@ -1,8 +1,9 @@
 import { SimpleGrid, Box } from '@chakra-ui/react';
 import * as React from 'react';
 
-import { getProgressionLevel } from '../../utils';
-import { Item } from '../item';
+import { getProgressionLevel } from '../utils';
+
+import { Item } from './Item';
 
 const bowProgress = ['biggestQuiver', 'bigQuiver', 'heroBow'];
 const bombProgress = ['biggerBombBag', 'bigBombBag', 'bombBag'];

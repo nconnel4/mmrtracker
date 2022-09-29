@@ -1,14 +1,21 @@
 import { createSlice, isAnyOf } from '@reduxjs/toolkit';
 import type { PayloadAction } from '@reduxjs/toolkit';
 
+import checkData from '@/data/checks.json';
 import itemData from '@/data/items.json';
-import type { Items, Flags } from '@/types';
+import regionData from '@/data/regions.json';
+import type { Items, Flags, Regions, Checks } from '@/types';
 import { checkFlag } from '@/utils';
 
 import type { AppStartListening } from './listenerMiddleware';
+import { RootState } from './store';
+
 interface TrackerState {
   items: Items;
   flags: Flags;
+  regions: Regions;
+  checks: Checks;
+  activeRegion: string;
 }
 
 const initialState: TrackerState = {
@@ -38,6 +45,9 @@ const initialState: TrackerState = {
     hasStoneTowerAccess: false,
     hasInvertedStoneTowerAccess: false,
   },
+  regions: regionData,
+  checks: checkData,
+  activeRegion: '',
 };
 
 export const trackerSlice = createSlice({
@@ -84,10 +94,32 @@ export const trackerSlice = createSlice({
       state.flags.hasStoneTowerAccess = checkFlag.hasStoneTowerAccess(state.items, state.flags);
       state.flags.hasInvertedStoneTowerAccess = checkFlag.hasInvertedStoneTowerAccess(state.flags);
     },
+    toggleCheckActive: (state, action: PayloadAction<string>) => {
+      state.checks[action.payload].active = !state.checks[action.payload].active;
+    },
+    toggleCheckComplete: (state, action: PayloadAction<string>) => {
+      state.checks[action.payload].complete = !state.checks[action.payload].complete;
+    },
+    setActiveRegion: (state, action: PayloadAction<string>) => {
+      state.activeRegion = action.payload;
+    },
   },
 });
 
-export const { toggleItem, upgradeItem, updateFlags } = trackerSlice.actions;
+export const {
+  toggleItem,
+  upgradeItem,
+  updateFlags,
+  toggleCheckActive,
+  toggleCheckComplete,
+  setActiveRegion,
+} = trackerSlice.actions;
+
+export const selectTracker = (state: RootState) => state.tracker;
+export const selectActiveRegion = (state: RootState) =>
+  state.tracker.regions[state.tracker.activeRegion];
+export const selectRegionList = (state: RootState) => Object.keys(state.tracker.regions);
+
 export default trackerSlice.reducer;
 
 export const addToggleItemListener = (startListening: AppStartListening) => {
