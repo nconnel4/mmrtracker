@@ -409,12 +409,12 @@
     "requiredItems": []
   },
   "gossipStones": {
-    "name": "Gossig Stones",
+    "name": "Gossip Stones",
     "active": false,
     "complete": false,
-    "requiredFlags": [],
+    "requiredFlags": ["canCompleteGossipStones"],
     "requiredItems": []
-  }, 
+  },
   "kamaro": {
     "name": "Kamaro",
     "active": false,
@@ -454,7 +454,7 @@
     "name": "Termina Field Stump Chest",
     "active": false,
     "complete": false,
-    "requiredFlags": [],
+    "requiredFlags": ["hasMagicBeansOrHookshot"],
     "requiredItems": []
   },
   "terminaFieldUnderwaterChest": {
@@ -491,5 +491,61 @@
     "complete": false,
     "requiredFlags": ["hasProjectile"],
     "requiredItems": []
+  },
+  "boatArchery": {
+    "name": "Boat Archery",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": ["odolwaRemains"]
+  },
+  "kotake": {
+    "name": "Kotake",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": []
+  },
+  "koume": {
+    "name": "Koume",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": ["bottle1"]
+  },
+  "mysteryWoodsGrotto": {
+    "name": "Mystery Woods Grotto",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": []
+  },
+  "swampSpiderHouseGrotto": {
+    "name": "Swamp Spider House Grotto",
+    "active": false,
+    "complete": false,
+    "requiredFlags": ["hasSwampAccess"],
+    "requiredItems": []
+  },
+  "pictographContest": {
+    "name": "Pictograph Contest Winner",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": ["pictographBox"]
+  },
+  "swampScrubTrade": {
+    "name": "Swamp Scrub Trade",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": ["landTitleDeed"]
+  },
+  "swampTouristCenterRoof": {
+    "name": "Swamp Tourist Center Roof",
+    "active": false,
+    "complete": false,
+    "requiredFlags": [],
+    "requiredItems": ["dekuMask", "landTitleDeed"]
   }
 }

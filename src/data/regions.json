@@ -7,7 +7,8 @@
       "southClockTownStrawRoofChest",
       "southClockTownFinalDayChest",
       "postBox"
-    ]
+    ],
+    "coordinates": [44, 52]
   },
   "northClockTown": {
     "name": "North Clock Town",
@@ -22,7 +23,8 @@
       "postBox",
       "townGreatFairy",
       "townGreatFairyTransform"
-    ]
+    ],
+    "coordinates": [44, 48]
   },
   "eastClockTown": {
     "name": "East Clock Town",
@@ -40,7 +42,8 @@
       "postmanFreedom",
       "townArchery1",
       "treasureChestGameGoron"
-    ]
+    ],
+    "coordinates": [48, 48]
   },
   "stockPotInn": {
     "name": "Stock Pot Inn",
@@ -52,7 +55,8 @@
       "innStaffRoom",
       "midnightMeeting",
       "toiletHand"
-    ]
+    ],
+    "coordinates": [48, 52]
   },
   "westClockTown": {
     "name": "West Clock Town",
@@ -66,11 +70,13 @@
       "postmanGame",
       "rosaSister",
       "swordmanSchool"
-    ]
+    ],
+    "coordinates": [40, 48]
   },
   "laundryPool": {
     "name": "Laundry Pool",
-    "checks": ["guruGuru", "kafei", "curiosityShopMan1", "curiosityShopMan2"]
+    "checks": ["guruGuru", "kafei", "curiosityShopMan1", "curiosityShopMan2"],
+    "coordinates": [40, 52]
   },
   "terminaField": {
     "name": "Termina Field",
@@ -86,28 +92,43 @@
       "terminaFieldPillarGrotto",
       "terminaFieldStumpChest",
       "terminaFieldUnderwaterChest"
-    ]
+    ],
+    "coordinates": [44, 56]
   },
   "roadSouthernSwamp": {
     "name": "Road to Southern Swamp",
-    "checks": ["swampPathGrotto", "swampPathTree", "swampArchery1", "woodfallMap", "snowheadMap"]
+    "checks": ["swampPathGrotto", "swampPathTree", "swampArchery1", "woodfallMap", "snowheadMap"],
+    "coordinates": [45, 65]
   },
   "southernSwamp": {
     "name": "Southern Swamp",
-    "checks": []
+    "checks": [
+      "boatArchery",
+      "koume",
+      "kotake",
+      "mysteryWoodsGrotto",
+      "swampSpiderHouseGrotto",
+      "pictographContest",
+      "swampScrubTrade",
+      "swampTouristCenterRoof"
+    ],
+    "coordinates": [48, 78]
   },
   "dekuPalace": {
     "name": "Deku Palace",
-    "checks": []
+    "checks": [],
+    "coordinates": [48, 95]
   },
   "woodfall": {
     "name": "Woodfall",
-    "checks": []
+    "checks": [],
+    "coordinates": [53, 85]
   },
 
   "woodfallTemple": {
     "name": "Woodfall Temple",
-    "checks": []
+    "checks": [],
+    "coordinates": [57, 85]
   },
   "mountainVillage": {
     "name": "Mountain Village",
@@ -118,94 +139,117 @@
       "mountainSmithDay2",
       "mountainSpringGrotto",
       "mountainWaterfallCave"
-    ]
+    ],
+    "coordinates": [44, 24]
   },
   "twinIslands": {
     "name": "Twin Islands",
-    "checks": []
+    "checks": [],
+    "coordinates": [54, 25]
   },
   "goronVillage": {
     "name": "Goron Village",
-    "checks": []
+    "checks": [],
+    "coordinates": [64, 23]
   },
   "pathSnowhead": {
     "name": "Path to Snowhead",
-    "checks": []
+    "checks": [],
+    "coordinates": [41, 15]
   },
   "snowheadTemple": {
     "name": "Snowhead Temple",
-    "checks": []
+    "checks": [],
+    "coordinates": [32.5, 4]
   },
   "milkRoad": {
     "name": "Milk Road",
-    "checks": []
+    "checks": [],
+    "coordinates": [34, 60]
   },
   "romaniRanch": {
     "name": "Romani Ranch",
-    "checks": []
+    "checks": [],
+    "coordinates": [25, 62]
   },
   "greatBayCoast": {
     "name": "Great Bay Coast",
-    "checks": []
+    "checks": [],
+    "coordinates": [17, 50]
   },
   "zoraCape": {
     "name": "Zora Cape",
-    "checks": []
+    "checks": [],
+    "coordinates": [17, 67]
   },
   "zoraHall": {
     "name": "Zora Hall",
-    "checks": []
+    "checks": [],
+    "coordinates": [4, 63]
   },
   "pirateFortressExterior": {
     "name": "Pirate's Fortress Exterior",
-    "checks": []
+    "checks": [],
+    "coordinates": [15, 27]
   },
   "pirateFortressSewer": {
     "name": "Pirate's Fortress Sewer",
-    "checks": []
+    "checks": [],
+    "coordinates": [17, 21]
   },
   "pirateFortressInterior": {
     "name": "Pirate's Fortress Interior",
-    "checks": []
+    "checks": [],
+    "coordinates": [20, 25]
   },
   "pinnacleRock": {
     "name": "Pinnacle Rock",
-    "checks": []
+    "checks": [],
+    "coordinates": [2, 36]
   },
   "greatBayTemple": {
     "name": "Great Bay Temple",
-    "checks": []
+    "checks": [],
+    "coordinates": [2, 68]
   },
   "roadIkana": {
     "name": "Road to Ikana",
-    "checks": []
+    "checks": [],
+    "coordinates": [63, 49]
   },
   "ikanaGraveyard": {
     "name": "Ikana Graveyard",
-    "checks": []
+    "checks": [],
+    "coordinates": [67, 42]
   },
   "ikanaCanyon": {
     "name": "Ikana Canyon",
-    "checks": []
+    "checks": [],
+    "coordinates": [80, 52]
   },
   "beneathWell": {
     "name": "Beneath the Well",
-    "checks": []
+    "checks": [],
+    "coordinates": [87, 49]
   },
   "ikanaCastle": {
     "name": "Ikana Castle",
-    "checks": []
+    "checks": [],
+    "coordinates": [81, 60]
   },
   "stoneTower": {
     "name": "Stone Tower",
-    "checks": []
+    "checks": [],
+    "coordinates": [89, 37]
   },
   "stoneTowerTemple": {
     "name": "Stone Tower Temple",
-    "checks": []
+    "checks": [],
+    "coordinates": [93, 37]
   },
   "secretShrine": {
     "name": "Secret Shrine",
-    "checks": []
+    "checks": [],
+    "coordinates": [77, 48]
   }
 }

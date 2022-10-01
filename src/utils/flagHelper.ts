@@ -106,4 +106,21 @@ export const checkFlag = {
   hasInvertedStoneTowerAccess: (flags: Flags) => {
     return flags.hasStoneTowerAccess && flags.hasLightArrows;
   },
+  canCompleteGossipStones: (items: Items) => {
+    return (
+      items.ocarina.active &&
+      ((items.dekuMask.active && items.sonataOfAwakening.active) ||
+        (items.goronMask.active && items.goronLullaby.active) ||
+        (items.zoraMask.active && items.newWaveBossaNova.active))
+    );
+  },
+  hasMagicBeans: (items: Items) => {
+    return (
+      items.magicBean.active &&
+      (items.bottle1.active || (items.ocarina.active && items.songOfStorms.active))
+    );
+  },
+  hasMagicBeansOrHookshot: (items: Items, flags: Flags) => {
+    return flags.hasMagicBeans || items.hookshot.active;
+  },
 };

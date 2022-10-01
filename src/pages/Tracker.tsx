@@ -3,6 +3,7 @@ import * as React from 'react';
 
 import { CheckList } from '@/features/checks';
 import { ItemGrid } from '@/features/inventory';
+import { Map } from '@/features/map';
 import { RegionList } from '@/features/regions';
 import { useAppSelector } from '@/hooks/useAppSelector';
 
@@ -17,6 +18,9 @@ export const Tracker = () => {
       <Box w="600px" p={3}>
         {!activeRegion && <RegionList />}
         {activeRegion && <CheckList />}
+      </Box>
+      <Box>
+        <Map />
       </Box>
     </Box>
   );

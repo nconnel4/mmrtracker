@@ -26,8 +26,11 @@ const initialState: TrackerState = {
     hasFireArrows: false,
     hasIceArrows: false,
     hasLightArrows: false,
+    hasMagicBeans: false,
+    hasMagicBeansOrHookshot: false,
     canMeltIce: false,
     canBreakRocks: false,
+    canCompleteGossipStones: false,
     hasSwampAccess: false,
     hasDekuPalaceAccess: false,
     hasWoodfallAccess: false,
@@ -69,6 +72,12 @@ export const trackerSlice = createSlice({
       state.flags.hasFireArrows = checkFlag.hasFireArrows(state.items);
       state.flags.hasIceArrows = checkFlag.hasIceArrows(state.items);
       state.flags.hasLightArrows = checkFlag.hasLightArrows(state.items);
+      state.flags.hasMagicBeans = checkFlag.hasMagicBeans(state.items);
+      state.flags.hasMagicBeansOrHookshot = checkFlag.hasMagicBeansOrHookshot(
+        state.items,
+        state.flags
+      );
+      state.flags.canCompleteGossipStones = checkFlag.canCompleteGossipStones(state.items);
       state.flags.canMeltIce = checkFlag.canMeltIce(state.items, state.flags);
       state.flags.canBreakRocks = checkFlag.canBreakRocks(state.items, state.flags);
       state.flags.hasSwampAccess = checkFlag.hasSwampAccess(state.items);
