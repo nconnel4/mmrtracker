@@ -116,18 +116,28 @@
   },
   "dekuPalace": {
     "name": "Deku Palace",
-    "checks": [],
+    "checks": ["beanGrotto", "beanMan", "butler", "westGarden", "imprisonedMonkey"],
     "coordinates": [48, 95]
   },
   "woodfall": {
     "name": "Woodfall",
-    "checks": [],
+    "checks": ["woodfallOwlChest", "woodfallEntranceChest", "woodfallBridgeChest"],
     "coordinates": [53, 85]
   },
 
   "woodfallTemple": {
     "name": "Woodfall Temple",
-    "checks": [],
+    "checks": [
+      "woodfallTempleMap",
+      "woodfallCompass",
+      "woodfallSmallKey1",
+      "woodfallEntrancePlatform",
+      "woodfallMainRoomSwitch",
+      "woodfallDarkRoom",
+      "woodfallHeroBow",
+      "odolwaHeartContainer",
+      "bossBlueWarp"
+    ],
     "coordinates": [57, 85]
   },
   "mountainVillage": {
@@ -164,12 +174,18 @@
   },
   "milkRoad": {
     "name": "Milk Road",
-    "checks": [],
+    "checks": [
+      "gormonBrosMilkPurchase",
+      "gormonBrosRace",
+      "greatBayMapPurchase",
+      "romaniRanchMapPurchase",
+      "keatonQuiz"
+    ],
     "coordinates": [34, 60]
   },
   "romaniRanch": {
     "name": "Romani Ranch",
-    "checks": [],
+    "checks": ["romaniGame", "alienDefense", "cremia", "dogRace", "dogRaceChest", "grog"],
     "coordinates": [25, 62]
   },
   "greatBayCoast": {

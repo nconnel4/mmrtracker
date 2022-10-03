@@ -509,8 +509,8 @@
     "name": "Swamp Spider House Grotto",
     "active": false,
     "complete": false,
-    "requiredItems": [],
-    "conditionalItems": []
+    "requiredItems": ["hasSwampAccess"],
+    "conditionalItems": [["dekuMask"], ["zoraMask"]]
   },
   "pictographContest": {
     "name": "Pictograph Contest Winner",
@@ -530,7 +530,196 @@
     "name": "Swamp Tourist Center Roof",
     "active": false,
     "complete": false,
-    "requiredItems": ["dekuMask", "landTitleDeed"],
+    "requiredItems": [],
+    "conditionalItems": [["dekuMask", "landTitleDeed"], ["goronMask"]]
+  },
+  "beanGrotto": {
+    "name": "Bean Grotto",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasDekuPalaceAccess"],
+    "conditionalItems": [["bottle1", "magicBean"], ["hookshot"]]
+  },
+  "beanMan": {
+    "name": "Bean Man",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasDekuPalaceAccess"],
+    "conditionalItems": []
+  },
+  "butler": {
+    "name": "Deku Butler",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["bottle1", "odolwaRemains"],
+    "conditionalItems": []
+  },
+  "westGarden": {
+    "name": "Deku Palace West Garden",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasDekuPalaceAccess"],
+    "conditionalItems": []
+  },
+  "imprisonedMonkey": {
+    "name": "ImprisonedMonkey",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasDekuPalaceAccess", "dekuMask", "ocarina"],
+    "conditionalItems": []
+  },
+  "woodfallOwlChest": {
+    "name": "Behind Woodfall Owl Chest",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasSwampAccess", "dekuMask"],
+    "conditionalItems": []
+  },
+  "woodfallEntranceChest": {
+    "name": "Woodfall Entrance Chest",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasSwampAccess", "dekuMask"],
+    "conditionalItems": []
+  },
+  "woodfallBridgeChest": {
+    "name": "Woodfall Bridge Chest",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasSwampAccess", "dekuMask"],
+    "conditionalItems": []
+  },
+  "woodfallTempleMap": {
+    "name": "Woodfall Map Chest",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasWoodfallAccess"],
+    "conditionalItems": []
+  },
+  "woodfallCompass": {
+    "name": "Woodfall Compass Chest",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasWoodfallAccess"],
+    "conditionalItems": []
+  },
+  "woodfallSmallKey1": {
+    "name": "Woodfall Small Key #1 Chest",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasWoodfallAccess"],
+    "conditionalItems": []
+  },
+  "woodfallEntrancePlatform": {
+    "name": "Woodfall Entrance Platform",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasWoodfallAccess"],
+    "conditionalItems": []
+  },
+  "woodfallMainRoomSwitch": {
+    "name": "Woodfall Main Room Switch",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasWoodfallAccess"],
+    "conditionalItems": []
+  },
+  "woodfallDarkRoom": {
+    "name": "Woodfall Dark Room",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasWoodfallAccess"],
+    "conditionalItems": []
+  },
+  "woodfallHeroBow": {
+    "name": "Woodfall Hero Bow Chest",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasWoodfallAccess"],
+    "conditionalItems": []
+  },
+  "odolwaHeartContainer": {
+    "name": "Odolwa Heart Container",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasWoodfallAccess"],
+    "conditionalItems": [["heroBow", "kokiriSword"], ["fierceDeityMask"], ["zoraMask"]]
+  },
+  "bossBlueWarp": {
+    "name": "Boss Blue Warp",
+    "active": false,
+    "complete": false,
+    "requiredItems": [],
+    "conditionalItems": [["odolwaRemains"], ["gohtRemains"], ["gyorgRemains"], ["twinmoldRemains"]]
+  },
+  "gormonBrosMilkPurchase": {
+    "name": "Gormon Bros Milk Purchase",
+    "active": false,
+    "complete": false,
+    "requiredItems": [],
+    "conditionalItems": []
+  },
+  "gormonBrosRace": {
+    "name": "Gormon Bros Race",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["ocarina", "eponaSong"],
+    "conditionalItems": []
+  },
+  "greatBayMapPurchase": {
+    "name": "Great Bay Map Purchase",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasProjectile"],
+    "conditionalItems": []
+  },
+  "romaniRanchMapPurchase": {
+    "name": "Romani Ranch Map Purchase",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasProjectile"],
+    "conditionalItems": []
+  },
+  "romaniGame": {
+    "name": "Romani's Game",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["heroBow", "powderKeg", "goronMask"],
+    "conditionalItems": []
+  },
+  "alienDefense": {
+    "name": "Alien Defense",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["heroBow", "powderKeg", "goronMask"],
+    "conditionalItems": []
+  },
+  "cremia": {
+    "name": "Cremia",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["heroBow", "powderKeg", "goronMask"],
+    "conditionalItems": []
+  },
+  "dogRace": {
+    "name": "Dog Race",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["maskOfTruth"],
+    "conditionalItems": []
+  },
+  "dogRaceChest": {
+    "name": "Dog Race Chest",
+    "active": false,
+    "complete": false,
+    "requiredItems": [],
+    "conditionalItems": [["zoraMask"], ["hookshot"], ["magicBean", "bottle1"]]
+  },
+  "grog": {
+    "name": "Grog",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["bremenMask"],
     "conditionalItems": []
   }
 }
