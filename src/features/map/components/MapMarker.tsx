@@ -35,7 +35,7 @@ export const MapMarker = ({ regionId }: MapMarkerProps) => {
       return 'gray';
     } else if (count == 0) {
       return 'red';
-    } else if (count < region.checks.length) {
+    } else if (count + completeCount < region.checks.length) {
       return 'goldenrod';
     }
 
