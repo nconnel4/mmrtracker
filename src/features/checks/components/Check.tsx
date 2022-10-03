@@ -11,15 +11,19 @@ type CheckProps = {
 
 export const Check = ({ id }: CheckProps) => {
   const check = useAppSelector((state) => state.tracker.checks[id]);
+  // let parentCheck = check;
+  // if (check.linkId) {
+  const parentCheck = useAppSelector((state) => state.tracker.checks[check.linkId as string]);
+  // }
   const dispatch = useAppDispatch();
 
   const handleClick = () => {
-    dispatch(toggleCheckComplete(id));
+    dispatch(toggleCheckComplete(check.linkId ? check.linkId : id));
   };
 
   const getColor = () => {
     try {
-      if (check.complete) {
+      if (parentCheck ? parentCheck.complete : check.complete) {
         return 'gray';
       } else if (check.active) {
         return 'green';
@@ -32,7 +36,7 @@ export const Check = ({ id }: CheckProps) => {
 
   return (
     <TrackerButton color={getColor()} handleClick={handleClick}>
-      {check.name}
+      {parentCheck ? parentCheck.name : check.name}
     </TrackerButton>
   );
 };

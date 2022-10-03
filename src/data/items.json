@@ -549,5 +549,97 @@
     "type": "song",
     "active": false,
     "label": "Oath"
+  },
+  "hasProjectile": {
+    "type": "flag",
+    "active": false
+  },
+  "hasExplosives": {
+    "type": "flag",
+    "active": false
+  },
+  "hasFireArrows": {
+    "type": "flag",
+    "active": false
+  },
+  "hasIceArrows": {
+    "type": "flag",
+    "active": false
+  },
+  "hasLightArrows": {
+    "type": "flag",
+    "active": false
+  },
+  "canMeltIce": {
+    "type": "flag",
+    "active": false
+  },
+  "canBreakRocks": {
+    "type": "flag",
+    "active": false
+  },
+  "hasSwampAccess": {
+    "type": "flag",
+    "active": false
+  },
+  "hasDekuPalaceAccess": {
+    "type": "flag",
+    "active": false
+  },
+  "hasWoodfallAccess": {
+    "type": "flag",
+    "active": false
+  },
+  "hasNorthAccess": {
+    "type": "flag",
+    "active": false
+  },
+  "hasSnowheadAccess": {
+    "type": "flag",
+    "active": false
+  },
+  "hasCoastAccess": {
+    "type": "flag",
+    "active": false
+  },
+  "hasPirateExteriorAccess": {
+    "type": "flag",
+    "active": false
+  },
+  "hasPirateSewerAccess": {
+    "type": "flag",
+    "active": false
+  },
+  "hasPirateInteriorAccess": {
+    "type": "flag",
+    "active": false
+  },
+  "hasGreatBayAccess": {
+    "type": "flag",
+    "active": false
+  },
+  "hasGraveyardAccess": {
+    "type": "flag",
+    "active": false
+  },
+  "hasIkanaAccess": {
+    "type": "flag",
+    "active": false
+  },
+  "hasUpperIkanaAccess": {
+    "type": "flag",
+    "active": false
+  },
+  "hasIkanaCastleAccess": {
+    "type": "flag",
+    "active": false
+  },
+  "hasStoneTowerAccess": {
+    "type": "flag",
+    "active": false
+  },
+  "hasInvertedStoneTowerAccess": {
+    "type": "flag",
+    "active": false
   }
 }

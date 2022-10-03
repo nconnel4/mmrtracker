@@ -11,9 +11,21 @@ type MapMarkerProps = {
 
 export const MapMarker = ({ regionId }: MapMarkerProps) => {
   const region = useAppSelector((state) => state.tracker.regions[regionId]);
-  const checks = region.checks.map((check: string) =>
-    useAppSelector((state) => state.tracker.checks[check])
+  const checks = region.checks.map((checkId: string) =>
+    useAppSelector((state) => {
+      const check = state.tracker.checks[checkId];
+      if (check.linkId) {
+        const parentCheck = state.tracker.checks[check.linkId];
+        return {
+          ...check,
+          complete: parentCheck.complete,
+        };
+      } else {
+        return check;
+      }
+    })
   );
+
   const dispatch = useAppDispatch();
 
   const handleClick = () => {
@@ -21,7 +33,13 @@ export const MapMarker = ({ regionId }: MapMarkerProps) => {
   };
 
   const getActiveChecks = () => {
-    return checks.filter((check) => check.active && !check.complete).length;
+    return checks.filter((check) => {
+      try {
+        return check.active && !check.complete;
+      } catch {
+        console.log(check);
+      }
+    }).length;
   };
   const getCompleteChecks = () => {
     return checks.filter((check) => check.complete).length;
@@ -35,7 +53,7 @@ export const MapMarker = ({ regionId }: MapMarkerProps) => {
       return 'gray';
     } else if (count == 0) {
       return 'red';
-    } else if (count < region.checks.length) {
+    } else if (count + completeCount < region.checks.length) {
       return 'goldenrod';
     }
 
@@ -44,8 +62,9 @@ export const MapMarker = ({ regionId }: MapMarkerProps) => {
 
   return (
     <Square
+      as="button"
       size={5}
-      rounded={2}
+      rounded={3}
       color="white"
       position="absolute"
       left={region.coordinates ? `${region.coordinates[0]}%` : '0%'}
@@ -55,6 +74,7 @@ export const MapMarker = ({ regionId }: MapMarkerProps) => {
       border={1}
       borderColor="white"
       borderStyle="solid"
+      fontWeight="bold"
     >
       {getActiveChecks() > 0 && getActiveChecks()}
     </Square>

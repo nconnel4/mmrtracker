@@ -17,8 +17,8 @@ export const CheckList = () => {
 
   return (
     <div>
-      <TrackerButton color="black" handleClick={handleClick}>
-        Return to Region List
+      <TrackerButton color="whiteAlpha.800" handleClick={handleClick}>
+        {region.name}
       </TrackerButton>
       {region.checks.map((check: string) => {
         return (
