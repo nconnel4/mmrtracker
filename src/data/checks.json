@@ -270,7 +270,14 @@
     "active": false,
     "complete": false,
     "requiredItems": [],
-    "conditionalItems": [["letterToMama"], ["kafeiLetter"], ["landTitleDeed"], ["swampTitleDeed"], ["mountainTitleDeed"], ["oceanTitleDeed"]]
+    "conditionalItems": [
+      ["letterToMama"],
+      ["kafeiLetter"],
+      ["landTitleDeed"],
+      ["swampTitleDeed"],
+      ["mountainTitleDeed"],
+      ["oceanTitleDeed"]
+    ]
   },
   "allNightMaskPurchase": {
     "name": "All Night Mask Purchase",
@@ -398,7 +405,11 @@
     "complete": false,
     "requiredFlags": ["canCompleteGossipStones"],
     "requiredItems": ["ocarina"],
-    "conditionalItems": [["dekuMask", "sonataOfAwakening"], ["goronMask", "goronLullaby"], ["zoraMask", "newWaveBossaNova"]]
+    "conditionalItems": [
+      ["dekuMask", "sonataOfAwakening", "canBreakRocks"],
+      ["goronMask", "goronLullaby"],
+      ["zoraMask", "newWaveBossaNova", "canBreakRocks"]
+    ]
   },
   "kamaro": {
     "name": "Kamaro",
@@ -420,6 +431,13 @@
     "complete": false,
     "requiredItems": [],
     "conditionalItems": []
+  },
+  "terminaBusinessScrub": {
+    "name": "Termina Business Scrub",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["adultWallet"],
+    "conditionalItems": [["hasProjectile"]]
   },
   "terminaFieldGrassGrotto": {
     "name": "Termina Field Grass Grotto",
@@ -650,7 +668,12 @@
     "active": false,
     "complete": false,
     "requiredItems": [],
-    "conditionalItems": [["odolwaRemains"], ["gohtRemains"], ["gyorgRemains"], ["twinmoldRemains"]]
+    "conditionalItems": [
+      ["odolwaRemains", "hasWoodfallAccess"],
+      ["gohtRemains", "hasSnowheadAccess"],
+      ["gyorgRemains", "hasGreatBayAccess"],
+      ["twinmoldRemains", "hasInvertedStoneTowerAccess"]
+    ]
   },
   "gormonBrosMilkPurchase": {
     "name": "Gormon Bros Milk Purchase",
@@ -666,14 +689,14 @@
     "requiredItems": ["ocarina", "eponaSong"],
     "conditionalItems": []
   },
-  "greatBayMapPurchase": {
+  "greatBayMap": {
     "name": "Great Bay Map Purchase",
     "active": false,
     "complete": false,
     "requiredItems": ["hasProjectile"],
     "conditionalItems": []
   },
-  "romaniRanchMapPurchase": {
+  "romaniRanchMap": {
     "name": "Romani Ranch Map Purchase",
     "active": false,
     "complete": false,
@@ -720,6 +743,589 @@
     "active": false,
     "complete": false,
     "requiredItems": ["bremenMask"],
+    "conditionalItems": []
+  },
+  "goronRace": {
+    "name": "Goron Race",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["gohtRemains", "goronMask", "magic", "hasNorthAccess"],
+    "conditionalItems": []
+  },
+  "goronRaceGrotto": {
+    "name": "Goron Race Grotto",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasExplosives", "hasNorthAccess"],
+    "conditionalItems": [["goronMask"], ["ocarina", "hookshot"]]
+  },
+  "hotSpringWaterGrotto": {
+    "name": "Hot Spring Water Grotto",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasNorthAccess"],
+    "conditionalItems": [["fireArrow"], ["bottle1"], ["gohtRemains"]]
+  },
+  "twinIslandCaveChest": {
+    "name": "Twin Island Cave Chest",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasNorthAccess", "gohtRemains", "zoraMask"],
+    "conditionalItems": []
+  },
+  "twinIslandUnderwaterChest": {
+    "name": "Twin Island Underwater Chest",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasNorthAccess", "gohtRemains", "zoraMask"],
+    "conditionalItems": []
+  },
+  "babyGoron": {
+    "name": "Baby Goron",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasNorthAccess", "goronMask"],
+    "conditionalItems": []
+  },
+  "biggestBombBagPurchase": {
+    "name": "Biggest Bomb Bag Purchase",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasNorthAccess", "goronMask", "adultWallet"],
+    "conditionalItems": []
+  },
+  "goronShopArrowsPurchase": {
+    "name": "Goron Shop 10 Arrows",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasNorthAccess"],
+    "conditionalItems": []
+  },
+  "goronShopBombsPurchase": {
+    "name": "Goron Shop 10 Bombs",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasNorthAccess"],
+    "conditionalItems": []
+  },
+  "goronShopRedPotionPurchase": {
+    "name": "Goron Shop Red Potion",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasNorthAccess"],
+    "conditionalItems": []
+  },
+  "goronVillageLedge": {
+    "name": "Goron Village Ledge",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasNorthAccess", "dekuMask", "swampTitleDeed"],
+    "conditionalItems": []
+  },
+  "lensCaveInvisible": {
+    "name": "Lens Cave Invisible Chest",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasNorthAccess"],
+    "conditionalItems": [["lensOfTruth", "magic"]]
+  },
+  "lensCaveRockChest": {
+    "name": "Lens Cave Rock Chest",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasNorthAccess", "hasExplosives"],
+    "conditionalItems": []
+  },
+  "lensOfTruthChest": {
+    "name": "Lens of Truth Chest",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasNorthAccess"],
+    "conditionalItems": []
+  },
+  "mountainScrubTrade": {
+    "name": "Mountain Scrub Trade",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasNorthAccess", "dekuMask", "swampTitleDeed"],
+    "conditionalItems": []
+  },
+  "powderKegChallenge": {
+    "name": "Powder Keg Challenge",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasNorthAccess", "goronMask"],
+    "conditionalItems": [["bottle1"], ["hasFireArrows"], ["gohtRemains"]]
+  },
+  "pathToSnowheadGrotto": {
+    "name": "Path to Snowhead Grotto",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasNorthAccess", "hasExplosives"],
+    "conditionalItems": [["goronMask", "magic"]]
+  },
+  "pathToSnowheadPillar": {
+    "name": "Path to Snowhead Pillar",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasNorthAccess", "ocarina", "hookshot"],
+    "conditionalItems": [["lensOfTruth"]]
+  },
+  "babyZora": {
+    "name": "Baby Zoras",
+    "active": false,
+    "complete": false,
+    "requiredItems": [
+      "hasCoastAccess",
+      "zoraMask",
+      "hasPirateInteriorAccess",
+      "hookshot",
+      "bottle1"
+    ],
+    "conditionalItems": []
+  },
+  "fishermanGame": {
+    "name": "Fisherman Game",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasCoastAccess", "gyorgRemains", "hookshot"],
+    "conditionalItems": []
+  },
+  "coastGrotto": {
+    "name": "Great Bay Coast Grotto",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasCoastAccess"],
+    "conditionalItems": []
+  },
+  "coastLedge": {
+    "name": "Great Bay Coast Ledge",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["magicBean", "bottle1", "hookshot", "ocarina"],
+    "conditionalItems": []
+  },
+  "labFish": {
+    "name": "Lab Fish",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["bottle1"],
+    "conditionalItems": []
+  },
+  "oceanSpiderHouseChest": {
+    "name": "Ocean Spider House Chest",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasExplosives", "captainHat", "heroBow"],
+    "conditionalItems": []
+  },
+  "stoneTowerMap": {
+    "name": "Stone Tower Map",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasProjectile"],
+    "conditionalItems": [["hasCoastAccess"], ["hasUpperIkanaAccess"]]
+  },
+  "beaverRace1": {
+    "name": "Beaver Race #1",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasCoastAccess", "hookshot", "zoraMask"],
+    "conditionalItems": []
+  },
+  "capeGrotto": {
+    "name": "Zora Cape Grotto",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasCoastAccess"],
+    "conditionalItems": []
+  },
+  "capeLedge1": {
+    "name": "Zora Cape Ledge with Tree",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasCoastAccess", "hookshot"],
+    "conditionalItems": []
+  },
+  "capeLedge2": {
+    "name": "Zora Cape Ledge without Tree",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasCoastAccess", "hookshot"],
+    "conditionalItems": []
+  },
+  "capeLikeLike": {
+    "name": "Zora Cape Like-Like",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasCoastAccess", "zoraMask"],
+    "conditionalItems": []
+  },
+  "capeUnderwaterChest": {
+    "name": "Zora Cape Underwater Chest",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasCoastAccess", "zoraMask"],
+    "conditionalItems": []
+  },
+  "evan": {
+    "name": "Evan",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasCoastAccess", "zoraMask", "ocarina"],
+    "conditionalItems": []
+  },
+  "luluRoom": {
+    "name": "Lulu's Room Ledge",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasCoastAccess", "zoraMask"],
+    "conditionalItems": [["goronMask", "dekuMask", "mountainTitleDeed"]]
+  },
+  "oceanScrubTrade": {
+    "name": "Ocean Scrub Trade",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasCoastAccess", "zoraMask", "goronMask", "mountainTitleDeed"],
+    "conditionalItems": []
+  },
+  "stageLights": {
+    "name": "Zora Hall Stage Lights",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasCoastAccess", "zoraMask", "hasFireArrows"],
+    "conditionalItems": []
+  },
+  "zoraShopArrowsPurchase": {
+    "name": "Zora Shop Arrows Purchase",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasCoastAccess"],
+    "conditionalItems": []
+  },
+  "zoraShopShieldPurchase": {
+    "name": "Zora Shop Shield Purchase",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasCoastAccess"],
+    "conditionalItems": []
+  },
+  "zoraShopRedPotionPurchase": {
+    "name": "Zora Shop Red Potion Purchase",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasCoastAccess"],
+    "conditionalItems": []
+  },
+  "pfExtCornerChest": {
+    "name": "Pirate's Fortress Ext Corner Chest",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasPirateFortressExteriorAccess"],
+    "conditionalItems": []
+  },
+  "pfExtLogChest": {
+    "name": "Pirate's Fortress Ext Log Chest",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasPirateFortressExteriorAccess"],
+    "conditionalItems": []
+  },
+  "pfExtSandChest": {
+    "name": "Pirate's Fortress Ext Sand Chest",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasPirateFortressExteriorAccess"],
+    "conditionalItems": []
+  },
+  "pfSewerCage": {
+    "name": "Pirate's Fortress Cage",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasPirateSewerAccess"],
+    "conditionalItems": []
+  },
+  "pfSewerCageDeepChest": {
+    "name": "Pirate's Fortress Cage Room Deep Chest",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasPirateSewerAccess"],
+    "conditionalItems": []
+  },
+  "pfSewerCageShallowChest": {
+    "name": "Pirate's Fortress Cage Room Shallow Chest",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasPirateSewerAccess"],
+    "conditionalItems": []
+  },
+  "pfSewerMaze": {
+    "name": "Pirate's Fortress Maze Chest",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasPirateSewerAccess"],
+    "conditionalItems": []
+  },
+  "pfIntHookshot": {
+    "name": "Hookshot Chest",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasPirateInteriorAccess"],
+    "conditionalItems": [
+      ["goronMask", "heroBow"],
+      ["dekuMask", "goronMask", "magic"],
+      ["hookshot", "heroBox"],
+      ["dekuMask", "magic", "hookshot"]
+    ]
+  },
+  "pfIntGuardRoom": {
+    "name": "Guard Room Chest",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasPirateInteriorAccess"],
+    "conditionalItems": [["hookshot"]]
+  },
+  "pfIntLower": {
+    "name": "Pirate's Fortress Lower Chest",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasPirateInteriorAccess"],
+    "conditionalItems": [["hookshot"], ["goronMask"]]
+  },
+  "pfIntUpper": {
+    "name": "Pirate's Fortress Upper Chest",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasPirateInteriorAccess"],
+    "conditionalItems": [["hookshot"]]
+  },
+  "pfIntTank": {
+    "name": "Pirate's Fortress Tank Chest",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasPirateInteriorAccess", "zoraMask"],
+    "conditionalItems": [["hookshot"]]
+  },
+  "pinnacleRockLower": {
+    "name": "Pinnacle Rock Lower Chest",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasCoastAccess", "zoraMask"],
+    "conditionalItems": []
+  },
+  "pinnacleRockUpper": {
+    "name": "Pinnacle Rock Upper Chest",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasCoastAccess", "zoraMask"],
+    "conditionalItems": []
+  },
+  "seahorse": {
+    "name": "Seahorses",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasCoastAccess", "zoraMask", "bottle1", "pictographBox"],
+    "conditionalItems": []
+  },
+  "invisibleSoldier": {
+    "name": "Invisible Soldier",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasGraveyardAccess", "magic", "lensOfTruth", "bottle1"],
+    "conditionalItems": []
+  },
+  "pathToIkanaGrotto": {
+    "name": "Path to Ikana Grotto",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["goronMask"],
+    "conditionalItems": []
+  },
+  "pathToIkanaPillar": {
+    "name": "Path to Ikana Pillar",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hookshot"],
+    "conditionalItems": []
+  },
+  "captainKeeta": {
+    "name": "Captain Keeta Chest",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["sonataOfAwakening", "ocarina", "hasGraveyardAccess"],
+    "conditionalItems": [["heroBow"]]
+  },
+  "dampeDigging": {
+    "name": "Dampe Digging",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasGraveyardAccess", "captainHat"],
+    "conditionalItems": [["heroBow"], ["zoraMask"]]
+  },
+  "day1GraveBats": {
+    "name": "Day 1 Grave Bats",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasGraveyardAccess", "captainHat"],
+    "conditionalItems": []
+  },
+  "day1GraveTablet": {
+    "name": "Day 1 Grave Tablet",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasGraveyardAccess", "captainHat"],
+    "conditionalItems": [["hasFireArrows"], ["dekuStick"]]
+  },
+  "day2IronKnuckle": {
+    "name": "Day 2 Grave Iron Knuckle",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasGraveyardAccess", "captainHat", "hasExplosives"],
+    "conditionalItems": [["lensOfTruth", "magic"]]
+  },
+  "graveyardGrotto": {
+    "name": "Graveyard Grotto",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasGraveyardAccess", "hasExplosives"],
+    "conditionalItems": []
+  },
+  "canyonScrubTrade": {
+    "name": "Canyon Scrub Trade",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasIkanaAccess", "oceanTitleDeed", "zoraMask"],
+    "conditionalItems": []
+  },
+  "canyonLedge": {
+    "name": "Ikana Canyon Ledge",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasIkanaAccess", "oceanTitleDeed", "zoraMask", "dekuMask"],
+    "conditionalItems": []
+  },
+  "pamela": {
+    "name": "Pamela's Father",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasUpperIkanaAccess", "ocarina", "songOfStorms", "songOfHealing"],
+    "conditionalItems": []
+  },
+  "poeHut": {
+    "name": "Poe Hut",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasUpperIkanaAccess"],
+    "conditionalItems": [["maskZora"], ["heroBow"]]
+  },
+  "secretShrineGrotto": {
+    "name": "Secret Shrine Grotto",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasIkanaAccess"],
+    "conditionalItems": []
+  },
+  "mirrorShieldChest": {
+    "name": "Mirror Shield Chest",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasUpperIkanaAccess"],
+    "conditionalItems": [
+      ["gibdoMask", "bottle1", "hasLightArrows"],
+      ["gibdoMask", "bottle1", "magicBean", "dekuMask"],
+      ["hasFireArrows", "hasLightArrows"]
+    ]
+  },
+  "wellLeftPath": {
+    "name": "Well Left Path Chest",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasUpperIkanaAccess", "gibdoMask", "bottle1"],
+    "conditionalItems": [
+      ["lensOfTruth", "magic", "adultWallet"],
+      ["lensOfTruth", "magic", "maskOfScents"]
+    ]
+  },
+  "wellRightPath": {
+    "name": "Well Right Path Chest",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasUpperIkanaAccess", "gibdoMask", "bottle1"],
+    "conditionalItems": [["magicBean"], ["hasLightArrows"]]
+  },
+  "ikanaCastlePillar": {
+    "name": "Ikana Castle Pillar",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasUpperIkanaAccess", "hasFireArrows", "hasIkanaCastleAccess"],
+    "conditionalItems": [["dekuMask"]]
+  },
+  "ikanaKing": {
+    "name": "Ikana King",
+    "active": false,
+    "complete": false,
+    "requiredItems": [
+      "hasUpperIkanaAccess",
+      "hasIkanaCastleAccess",
+      "hasFireArrows",
+      "mirrorShield"
+    ],
+    "conditionalItems": [["hasLightArrows"], ["dekuMask", "goronMask", "powderKeg"]]
+  },
+  "invertedStoneTowerLeftChest": {
+    "name": "Inverted Stone Tower Left Chest",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasStoneTowerAccess", "magicBean", "hasLightArrow"],
+    "conditionalItems": [["songOfStorms"], ["bottle1"]]
+  },
+  "invertedStoneTowerMiddleChest": {
+    "name": "Inverted Stone Tower Middle Chest",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasStoneTowerAccess", "magicBean", "hasLightArrow"],
+    "conditionalItems": [["songOfStorms"], ["bottle1"]]
+  },
+  "invertedStoneTowerRightChest": {
+    "name": "Inverted Stone Tower Right Chest",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasStoneTowerAccess", "magicBean", "hasLightArrow"],
+    "conditionalItems": [["songOfStorms"], ["bottle1"]]
+  },
+  "secretShrineDinolfo": {
+    "name": "Secret Shrine Dinolfos Chest",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasIkanaAccess", "hasLightArrows"],
+    "conditionalItems": []
+  },
+  "secretShrineGaro": {
+    "name": "Secret Shrine Garo Chest",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasIkanaAccess", "hasLightArrows"],
+    "conditionalItems": []
+  },
+  "secretShrineWart": {
+    "name": "Secret Shrine Wart Chest",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasIkanaAccess", "hasLightArrows"],
+    "conditionalItems": []
+  },
+  "secretShrineWizzrobe": {
+    "name": "Secret Shrine Wizzrobe Chest",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasIkanaAccess", "hasLightArrows"],
+    "conditionalItems": []
+  },
+  "secretShrineFinal": {
+    "name": "Secret Shrine Final Chest",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasIkanaAccess", "hasLightArrows"],
     "conditionalItems": []
   }
 }

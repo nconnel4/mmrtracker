@@ -98,7 +98,9 @@ export const checkFlag = {
     return items.hasIkanaAccess.active && items.hasIceArrows.active && items.hookshot.active;
   },
   hasIkanaCastleAccess: (items: Items) => {
-    return items.hasUpperIkanaAccess.active;
+    return (
+      items.hasUpperIkanaAccess.active && (items.hasLightArrows.active || items.mirrorShield.active)
+    );
   },
   hasStoneTowerAccess: (items: Items) => {
     return (

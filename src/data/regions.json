@@ -91,7 +91,8 @@
       "terminaFieldGrassGrotto",
       "terminaFieldPillarGrotto",
       "terminaFieldStumpChest",
-      "terminaFieldUnderwaterChest"
+      "terminaFieldUnderwaterChest",
+      "terminaBusinessScrub"
     ],
     "coordinates": [44, 56]
   },
@@ -154,17 +155,37 @@
   },
   "twinIslands": {
     "name": "Twin Islands",
-    "checks": [],
+    "checks": [
+      "goronRaceGrotto",
+      "hotSpringWaterGrotto",
+      "romaniRanchMap",
+      "snowheadMap",
+      "twinIslandCaveChest",
+      "twinIslandUnderwaterChest",
+      "goronRace"
+    ],
     "coordinates": [54, 25]
   },
   "goronVillage": {
     "name": "Goron Village",
-    "checks": [],
+    "checks": [
+      "babyGoron",
+      "goronShopArrowsPurchase",
+      "goronShopBombsPurchase",
+      "goronShopRedPotionPurchase",
+      "biggestBombBagPurchase",
+      "mountainScrubTrade",
+      "goronVillageLedge",
+      "lensOfTruthChest",
+      "lensCaveRockChest",
+      "lensCaveInvisible",
+      "powderKegChallenge"
+    ],
     "coordinates": [64, 23]
   },
   "pathSnowhead": {
     "name": "Path to Snowhead",
-    "checks": [],
+    "checks": ["pathToSnowheadGrotto", "pathToSnowheadPillar"],
     "coordinates": [41, 15]
   },
   "snowheadTemple": {
@@ -177,8 +198,8 @@
     "checks": [
       "gormonBrosMilkPurchase",
       "gormonBrosRace",
-      "greatBayMapPurchase",
-      "romaniRanchMapPurchase",
+      "greatBayMap",
+      "romaniRanchMap",
       "keatonQuiz"
     ],
     "coordinates": [34, 60]
@@ -190,37 +211,61 @@
   },
   "greatBayCoast": {
     "name": "Great Bay Coast",
-    "checks": [],
+    "checks": [
+      "coastGrotto",
+      "labFish",
+      "babyZora",
+      "greatBayMap",
+      "stoneTowerMap",
+      "coastLedge",
+      "oceanSpiderHouseChest",
+      "fishermanGame"
+    ],
     "coordinates": [17, 50]
   },
   "zoraCape": {
     "name": "Zora Cape",
-    "checks": [],
+    "checks": [
+      "beaverRace1",
+      "capeGrotto",
+      "capeLedge1",
+      "capeLedge2",
+      "capeLikeLike",
+      "capeUnderwaterChest"
+    ],
     "coordinates": [17, 67]
   },
   "zoraHall": {
     "name": "Zora Hall",
-    "checks": [],
+    "checks": [
+      "evan",
+      "luluRoom",
+      "oceanScrubTrade",
+      "stageLights",
+      "zoraShopArrowsPurchase",
+      "zoraShopShieldPurchase",
+      "zoraShopRedPotionPurchase"
+    ],
     "coordinates": [4, 63]
   },
   "pirateFortressExterior": {
     "name": "Pirate's Fortress Exterior",
-    "checks": [],
+    "checks": ["pfExtCornerChest", "pfExtLogChest", "pfExtSandChest"],
     "coordinates": [15, 27]
   },
   "pirateFortressSewer": {
     "name": "Pirate's Fortress Sewer",
-    "checks": [],
-    "coordinates": [17, 21]
+    "checks": ["pfSewerCage", "pfSewerCageDeepChest", "pfSewerCageShallowChest", "pfSewerMaze"],
+    "coordinates": [20, 25]
   },
   "pirateFortressInterior": {
     "name": "Pirate's Fortress Interior",
-    "checks": [],
-    "coordinates": [20, 25]
+    "checks": ["pfIntHookshot", "pfIntGuardRoom", "pfIntLower", "pfIntUpper", "pfIntTank"],
+    "coordinates": [17, 21]
   },
   "pinnacleRock": {
     "name": "Pinnacle Rock",
-    "checks": [],
+    "checks": ["pinnacleRockLower", "pinnacleRockUpper", "seahorse"],
     "coordinates": [2, 36]
   },
   "greatBayTemple": {
@@ -230,32 +275,50 @@
   },
   "roadIkana": {
     "name": "Road to Ikana",
-    "checks": [],
+    "checks": ["invisibleSoldier", "pathToIkanaGrotto", "pathToIkanaPillar"],
     "coordinates": [63, 49]
   },
   "ikanaGraveyard": {
     "name": "Ikana Graveyard",
-    "checks": [],
+    "checks": [
+      "captainKeeta",
+      "dampeDigging",
+      "day1GraveBats",
+      "day1GraveTablet",
+      "day2IronKnuckle",
+      "graveyardGrotto"
+    ],
     "coordinates": [67, 42]
   },
   "ikanaCanyon": {
     "name": "Ikana Canyon",
-    "checks": [],
+    "checks": [
+      "canyonScrubTrade",
+      "canyonLedge",
+      "pamela",
+      "poeHut",
+      "secretShrineGrotto",
+      "stoneTowerMap"
+    ],
     "coordinates": [80, 52]
   },
   "beneathWell": {
     "name": "Beneath the Well",
-    "checks": [],
+    "checks": ["mirrorShieldChest", "wellLeftPath", "wellRightPath"],
     "coordinates": [87, 49]
   },
   "ikanaCastle": {
     "name": "Ikana Castle",
-    "checks": [],
+    "checks": ["ikanaCastlePillar", "ikanaKing"],
     "coordinates": [81, 60]
   },
   "stoneTower": {
     "name": "Stone Tower",
-    "checks": [],
+    "checks": [
+      "invertedStoneTowerLeftChest",
+      "invertedStoneTowerMiddleChest",
+      "invertedStoneTowerRightChest"
+    ],
     "coordinates": [89, 37]
   },
   "stoneTowerTemple": {
@@ -265,7 +328,13 @@
   },
   "secretShrine": {
     "name": "Secret Shrine",
-    "checks": [],
+    "checks": [
+      "secretShrineDinolfo",
+      "secretShrineGaro",
+      "secretShrineWart",
+      "secretShrineWart",
+      "secretShrineFinal"
+    ],
     "coordinates": [77, 48]
   }
 }

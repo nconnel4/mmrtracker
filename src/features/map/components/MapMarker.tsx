@@ -21,7 +21,13 @@ export const MapMarker = ({ regionId }: MapMarkerProps) => {
   };
 
   const getActiveChecks = () => {
-    return checks.filter((check) => check.active && !check.complete).length;
+    return checks.filter((check) => {
+      try {
+        return check.active && !check.complete;
+      } catch {
+        console.log(check);
+      }
+    }).length;
   };
   const getCompleteChecks = () => {
     return checks.filter((check) => check.complete).length;
@@ -44,8 +50,9 @@ export const MapMarker = ({ regionId }: MapMarkerProps) => {
 
   return (
     <Square
+      as="button"
       size={5}
-      rounded={2}
+      rounded={3}
       color="white"
       position="absolute"
       left={region.coordinates ? `${region.coordinates[0]}%` : '0%'}
@@ -55,6 +62,7 @@ export const MapMarker = ({ regionId }: MapMarkerProps) => {
       border={1}
       borderColor="white"
       borderStyle="solid"
+      fontWeight="bold"
     >
       {getActiveChecks() > 0 && getActiveChecks()}
     </Square>
