@@ -31,7 +31,7 @@ startAppListener({
 
     Object.keys(tracker.checks).forEach((key) => {
       const check = tracker.checks[key];
-      const active = checkActive(tracker.items, tracker.flags, check);
+      const active = checkActive(tracker.items, check);
 
       if (check.active != active) {
         listenerApi.dispatch(toggleCheckActive(key));

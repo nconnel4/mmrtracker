@@ -4,7 +4,7 @@ import type { PayloadAction } from '@reduxjs/toolkit';
 import checkData from '@/data/checks.json';
 import itemData from '@/data/items.json';
 import regionData from '@/data/regions.json';
-import type { Items, Flags, Regions, Checks } from '@/types';
+import type { Items, Regions, Checks } from '@/types';
 import { checkFlag } from '@/utils';
 
 import type { AppStartListening } from './listenerMiddleware';
@@ -12,7 +12,6 @@ import { RootState } from './store';
 
 interface TrackerState {
   items: Items;
-  flags: Flags;
   regions: Regions;
   checks: Checks;
   activeRegion: string;
@@ -20,34 +19,6 @@ interface TrackerState {
 
 const initialState: TrackerState = {
   items: itemData,
-  flags: {
-    hasProjectile: false,
-    hasExplosives: false,
-    hasFireArrows: false,
-    hasIceArrows: false,
-    hasLightArrows: false,
-    hasMagicBeans: false,
-    hasMagicBeansOrHookshot: false,
-    canMeltIce: false,
-    canBreakRocks: false,
-    canCompleteGossipStones: false,
-    hasSwampAccess: false,
-    hasDekuPalaceAccess: false,
-    hasWoodfallAccess: false,
-    hasNorthAccess: false,
-    hasSnowHeadAccess: false,
-    hasCoastAccess: false,
-    hasPirateExteriorAccess: false,
-    hasPirateSewerAccess: false,
-    hasPirateInteriorAccess: false,
-    hasGreatBayAccess: false,
-    hasGraveyardAccess: false,
-    hasIkanaAccess: false,
-    hasUpperIkanaAccess: false,
-    hasIkanaCastleAccess: false,
-    hasStoneTowerAccess: false,
-    hasInvertedStoneTowerAccess: false,
-  },
   regions: regionData,
   checks: checkData,
   activeRegion: '',
@@ -67,41 +38,31 @@ export const trackerSlice = createSlice({
       }
     },
     updateFlags: (state) => {
-      state.flags.hasProjectile = checkFlag.hasProjectile(state.items);
-      state.flags.hasExplosives = checkFlag.hasExplosives(state.items);
-      state.flags.hasFireArrows = checkFlag.hasFireArrows(state.items);
-      state.flags.hasIceArrows = checkFlag.hasIceArrows(state.items);
-      state.flags.hasLightArrows = checkFlag.hasLightArrows(state.items);
-      state.flags.hasMagicBeans = checkFlag.hasMagicBeans(state.items);
-      state.flags.hasMagicBeansOrHookshot = checkFlag.hasMagicBeansOrHookshot(
-        state.items,
-        state.flags
+      state.items.hasProjectile.active = checkFlag.hasProjectile(state.items);
+      state.items.hasExplosives.active = checkFlag.hasExplosives(state.items);
+      state.items.hasFireArrows.active = checkFlag.hasFireArrows(state.items);
+      state.items.hasIceArrows.active = checkFlag.hasIceArrows(state.items);
+      state.items.hasLightArrows.active = checkFlag.hasLightArrows(state.items);
+      state.items.canMeltIce.active = checkFlag.canMeltIce(state.items);
+      state.items.canBreakRocks.active = checkFlag.canBreakRocks(state.items);
+      state.items.hasSwampAccess.active = checkFlag.hasSwampAccess(state.items);
+      state.items.hasDekuPalaceAccess.active = checkFlag.hasDekuPalaceAccess(state.items);
+      state.items.hasWoodfallAccess.active = checkFlag.hasWoodfallAccess(state.items);
+      state.items.hasNorthAccess.active = checkFlag.hasNorthAccess(state.items);
+      state.items.hasSnowheadAccess.active = checkFlag.hasSnowheadAccess(state.items);
+      state.items.hasCoastAccess.active = checkFlag.hasCoastAccess(state.items);
+      state.items.hasPirateExteriorAccess.active = checkFlag.hasPirateExteriorAccess(state.items);
+      state.items.hasPirateSewerAccess.active = checkFlag.hasPirateSewerAccess(state.items);
+      state.items.hasPirateInteriorAccess.active = checkFlag.hasPirateInteriorAccess(state.items);
+      state.items.hasGreatBayAccess.active = checkFlag.hasGreatBayAccess(state.items);
+      state.items.hasGraveyardAccess.active = checkFlag.hasGraveyardAccess(state.items);
+      state.items.hasIkanaAccess.active = checkFlag.hasIkanaAccess(state.items);
+      state.items.hasUpperIkanaAccess.active = checkFlag.hasUpperIkanaAccess(state.items);
+      state.items.hasIkanaCastleAccess.active = checkFlag.hasIkanaCastleAccess(state.items);
+      state.items.hasStoneTowerAccess.active = checkFlag.hasStoneTowerAccess(state.items);
+      state.items.hasInvertedStoneTowerAccess.active = checkFlag.hasInvertedStoneTowerAccess(
+        state.items
       );
-      state.flags.canCompleteGossipStones = checkFlag.canCompleteGossipStones(state.items);
-      state.flags.canMeltIce = checkFlag.canMeltIce(state.items, state.flags);
-      state.flags.canBreakRocks = checkFlag.canBreakRocks(state.items, state.flags);
-      state.flags.hasSwampAccess = checkFlag.hasSwampAccess(state.items);
-      state.flags.hasDekuPalaceAccess = checkFlag.hasDekuPalaceAccess(state.items, state.flags);
-      state.flags.hasWoodfallAccess = checkFlag.hasWoodfallAccess(state.items, state.flags);
-      state.flags.hasNorthAccess = checkFlag.hasNorthAccess(state.items, state.flags);
-      state.flags.hasSnowHeadAccess = checkFlag.hasSnowHeadAccess(state.items, state.flags);
-      state.flags.hasCoastAccess = checkFlag.hasCoastAccess(state.items);
-      state.flags.hasPirateExteriorAccess = checkFlag.hasPirateExteriorAccess(
-        state.items,
-        state.flags
-      );
-      state.flags.hasPirateSewerAccess = checkFlag.hasPirateSewerAccess(state.items, state.flags);
-      state.flags.hasPirateInteriorAccess = checkFlag.hasPirateInteriorAccess(
-        state.items,
-        state.flags
-      );
-      state.flags.hasGreatBayAccess = checkFlag.hasGreatBayAccess(state.items, state.flags);
-      state.flags.hasGraveyardAccess = checkFlag.hasGraveyardAccess(state.items);
-      state.flags.hasIkanaAccess = checkFlag.hasIkanaAccess(state.items, state.flags);
-      state.flags.hasUpperIkanaAccess = checkFlag.hasUpperIkanaAccess(state.items, state.flags);
-      state.flags.hasIkanaCastleAccess = checkFlag.hasIkanaCastleAccess(state.items, state.flags);
-      state.flags.hasStoneTowerAccess = checkFlag.hasStoneTowerAccess(state.items, state.flags);
-      state.flags.hasInvertedStoneTowerAccess = checkFlag.hasInvertedStoneTowerAccess(state.flags);
     },
     toggleCheckActive: (state, action: PayloadAction<string>) => {
       state.checks[action.payload].active = !state.checks[action.payload].active;
