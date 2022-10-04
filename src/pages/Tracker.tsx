@@ -1,4 +1,4 @@
-import { Box } from '@chakra-ui/react';
+import { Box, Flex } from '@chakra-ui/react';
 import * as React from 'react';
 
 import { CheckList } from '@/features/checks';
@@ -11,17 +11,17 @@ export const Tracker = () => {
   const activeRegion = useAppSelector((state) => state.tracker.activeRegion);
 
   return (
-    <Box display="flex">
-      <Box w="400px" p={3}>
+    <Flex maxHeight="100%" maxWidth="1500px" flexWrap="wrap">
+      <Box flex="0 0 350px" p={3}>
         <ItemGrid />
       </Box>
-      <Box w="600px" p={3}>
+      <Box h="90vh" flex="1 1 300px" p={3} overflowY="scroll">
         {!activeRegion && <RegionList />}
         {activeRegion && <CheckList />}
       </Box>
-      <Box>
+      <Box flex="1 0 600px">
         <Map />
       </Box>
-    </Box>
+    </Flex>
   );
 };

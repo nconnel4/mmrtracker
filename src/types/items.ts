@@ -1,6 +1,6 @@
 export type Item = {
-  name: string;
-  image: string;
+  name?: string;
+  image?: string;
   type: string;
   active: boolean;
   label?: string;

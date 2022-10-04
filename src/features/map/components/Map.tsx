@@ -12,8 +12,8 @@ export const Map = () => {
   const regions = useAppSelector(selectRegionList);
 
   return (
-    <Box position="relative" w="800px" h="800px">
-      <Image position="absolute" src={map} w="100%" h="100%" />
+    <Box position="relative" h="0" maxHeight="100vh" paddingTop="100%">
+      <Image position="absolute" src={map} w="100%" h="100%" top="0" left="0" verticalAlign="top" />
       {regions.map((region) => (
         <MapMarker regionId={region} key={region} />
       ))}

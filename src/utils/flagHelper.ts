@@ -1,4 +1,4 @@
-import type { Items, Flags } from '@/types';
+import type { Items } from '@/types';
 
 export const checkFlag = {
   hasProjectile: (items: Items) => {
@@ -25,11 +25,11 @@ export const checkFlag = {
   hasLightArrows: (items: Items) => {
     return items.heroBow.active && items.lightArrow.active && items.magic.active;
   },
-  canMeltIce: (items: Items, flags: Flags) => {
-    return flags.hasFireArrows || items.bottle1.active || items.gohtRemains.active;
+  canMeltIce: (items: Items) => {
+    return items.hasFireArrows.active || items.bottle1.active || items.gohtRemains.active;
   },
-  canBreakRocks: (items: Items, flags: Flags) => {
-    return flags.hasExplosives || items.goronMask.active;
+  canBreakRocks: (items: Items) => {
+    return items.hasExplosives.active || items.goronMask.active;
   },
   hasSwampAccess: (items: Items) => {
     return (
@@ -40,18 +40,20 @@ export const checkFlag = {
       items.pictographBox.active
     );
   },
-  hasDekuPalaceAccess: (items: Items, flags: Flags) => {
-    return items.dekuMask.active && flags.hasSwampAccess;
+  hasDekuPalaceAccess: (items: Items) => {
+    return items.dekuMask.active && items.hasSwampAccess.active;
   },
-  hasWoodfallAccess: (items: Items, flags: Flags) => {
-    return flags.hasDekuPalaceAccess && items.ocarina.active && items.sonataOfAwakening.active;
-  },
-  hasNorthAccess: (items: Items, flags: Flags) => {
-    return flags.canBreakRocks && items.heroBow.active;
-  },
-  hasSnowHeadAccess: (items: Items, flags: Flags) => {
+  hasWoodfallAccess: (items: Items) => {
     return (
-      flags.hasNorthAccess &&
+      items.hasDekuPalaceAccess.active && items.ocarina.active && items.sonataOfAwakening.active
+    );
+  },
+  hasNorthAccess: (items: Items) => {
+    return items.canBreakRocks.active && items.heroBow.active;
+  },
+  hasSnowheadAccess: (items: Items) => {
+    return (
+      items.hasNorthAccess.active &&
       items.goronMask.active &&
       items.magic.active &&
       items.ocarina.active &&
@@ -61,18 +63,21 @@ export const checkFlag = {
   hasCoastAccess: (items: Items) => {
     return items.ocarina.active && items.eponaSong.active;
   },
-  hasPirateExteriorAccess: (items: Items, flags: Flags) => {
-    return items.zoraMask.active && flags.hasCoastAccess;
+  hasPirateExteriorAccess: (items: Items) => {
+    return items.zoraMask.active && items.hasCoastAccess.active;
   },
-  hasPirateSewerAccess: (items: Items, flags: Flags) => {
-    return flags.hasPirateExteriorAccess && items.goronMask.active;
+  hasPirateSewerAccess: (items: Items) => {
+    return items.hasPirateExteriorAccess.active && items.goronMask.active;
   },
-  hasPirateInteriorAccess: (items: Items, flags: Flags) => {
-    return flags.hasPirateSewerAccess || (flags.hasPirateExteriorAccess && items.hookshot.active);
-  },
-  hasGreatBayAccess: (items: Items, flags: Flags) => {
+  hasPirateInteriorAccess: (items: Items) => {
     return (
-      flags.hasCoastAccess &&
+      items.hasPirateSewerAccess.active ||
+      (items.hasPirateExteriorAccess.active && items.hookshot.active)
+    );
+  },
+  hasGreatBayAccess: (items: Items) => {
+    return (
+      items.hasCoastAccess.active &&
       items.zoraMask.active &&
       items.ocarina.active &&
       items.newWaveBossaNova.active &&
@@ -82,45 +87,30 @@ export const checkFlag = {
   hasGraveyardAccess: (items: Items) => {
     return items.ocarina.active && items.eponaSong.active;
   },
-  hasIkanaAccess: (items: Items, flags: Flags) => {
+  hasIkanaAccess: (items: Items) => {
     return (
-      flags.hasGraveyardAccess &&
+      items.hasGraveyardAccess.active &&
       (items.garoMask.active || items.gibdoMask.active) &&
       items.hookshot.active
     );
   },
-  hasUpperIkanaAccess: (items: Items, flags: Flags) => {
-    return flags.hasIkanaAccess && flags.hasIceArrows && items.hookshot.active;
+  hasUpperIkanaAccess: (items: Items) => {
+    return items.hasIkanaAccess.active && items.hasIceArrows.active && items.hookshot.active;
   },
-  hasIkanaCastleAccess: (items: Items, flags: Flags) => {
-    return flags.hasUpperIkanaAccess;
-  },
-  hasStoneTowerAccess: (items: Items, flags: Flags) => {
+  hasIkanaCastleAccess: (items: Items) => {
     return (
-      flags.hasUpperIkanaAccess &&
+      items.hasUpperIkanaAccess.active && (items.hasLightArrows.active || items.mirrorShield.active)
+    );
+  },
+  hasStoneTowerAccess: (items: Items) => {
+    return (
+      items.hasUpperIkanaAccess.active &&
       (items.dekuMask.active || items.zoraMask.active || items.goronMask.active) &&
       items.ocarina.active &&
       items.elegyOfEmptiness.active
     );
   },
-  hasInvertedStoneTowerAccess: (flags: Flags) => {
-    return flags.hasStoneTowerAccess && flags.hasLightArrows;
-  },
-  canCompleteGossipStones: (items: Items) => {
-    return (
-      items.ocarina.active &&
-      ((items.dekuMask.active && items.sonataOfAwakening.active) ||
-        (items.goronMask.active && items.goronLullaby.active) ||
-        (items.zoraMask.active && items.newWaveBossaNova.active))
-    );
-  },
-  hasMagicBeans: (items: Items) => {
-    return (
-      items.magicBean.active &&
-      (items.bottle1.active || (items.ocarina.active && items.songOfStorms.active))
-    );
-  },
-  hasMagicBeansOrHookshot: (items: Items, flags: Flags) => {
-    return flags.hasMagicBeans || items.hookshot.active;
+  hasInvertedStoneTowerAccess: (items: Items) => {
+    return items.hasStoneTowerAccess.active && items.hasLightArrows.active;
   },
 };
