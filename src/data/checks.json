@@ -944,7 +944,7 @@
     "name": "Zora Cape Grotto",
     "active": false,
     "complete": false,
-    "requiredItems": ["hasCoastAccess"],
+    "requiredItems": ["hasCoastAccess", "canBreakRocks"],
     "conditionalItems": []
   },
   "capeLedge1": {
@@ -1081,7 +1081,7 @@
     "conditionalItems": [
       ["goronMask", "heroBow"],
       ["dekuMask", "goronMask", "magic"],
-      ["hookshot", "heroBox"],
+      ["hookshot", "heroBow"],
       ["dekuMask", "magic", "hookshot"]
     ]
   },

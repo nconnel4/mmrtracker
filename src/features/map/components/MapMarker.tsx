@@ -11,9 +11,21 @@ type MapMarkerProps = {
 
 export const MapMarker = ({ regionId }: MapMarkerProps) => {
   const region = useAppSelector((state) => state.tracker.regions[regionId]);
-  const checks = region.checks.map((check: string) =>
-    useAppSelector((state) => state.tracker.checks[check])
+  const checks = region.checks.map((checkId: string) =>
+    useAppSelector((state) => {
+      const check = state.tracker.checks[checkId];
+      if (check.linkId) {
+        const parentCheck = state.tracker.checks[check.linkId];
+        return {
+          ...check,
+          complete: parentCheck.complete,
+        };
+      } else {
+        return check;
+      }
+    })
   );
+
   const dispatch = useAppDispatch();
 
   const handleClick = () => {
