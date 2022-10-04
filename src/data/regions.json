@@ -149,7 +149,8 @@
       "mountainSmithDay1",
       "mountainSmithDay2",
       "mountainSpringGrotto",
-      "mountainWaterfallCave"
+      "mountainWaterfallCave",
+      "keatonMaskMountain"
     ],
     "coordinates": [44, 24]
   },
@@ -158,8 +159,8 @@
     "checks": [
       "goronRaceGrotto",
       "hotSpringWaterGrotto",
-      "romaniRanchMap",
-      "snowheadMap",
+      "romaniRanchMapTwinIsland",
+      "snowheadMapTwinIsland",
       "twinIslandCaveChest",
       "twinIslandUnderwaterChest",
       "goronRace"
@@ -215,8 +216,9 @@
       "coastGrotto",
       "labFish",
       "babyZora",
-      "greatBayMap",
-      "stoneTowerMap",
+      "mikau",
+      "greatBayMapCoast",
+      "stoneTowerMapCoast",
       "coastLedge",
       "oceanSpiderHouseChest",
       "fishermanGame"
@@ -298,7 +300,8 @@
       "pamela",
       "poeHut",
       "secretShrineGrotto",
-      "stoneTowerMap"
+      "stoneTowerMapIkana",
+      "clockTownMapIkana"
     ],
     "coordinates": [80, 52]
   },
@@ -332,7 +335,7 @@
       "secretShrineDinolfo",
       "secretShrineGaro",
       "secretShrineWart",
-      "secretShrineWart",
+      "secretShrineWizzrobe",
       "secretShrineFinal"
     ],
     "coordinates": [77, 48]

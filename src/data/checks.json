@@ -115,8 +115,8 @@
     "name": "Hungry Goron",
     "active": false,
     "complete": false,
-    "requiredItems": ["goronMask", "hasNorthAccess"],
-    "conditionalItems": []
+    "requiredItems": ["goronMask", "hasNorthAccess", "magic"],
+    "conditionalItems": [["hasFireArrows"], ["dekuStick"]]
   },
   "mountainSmithDay1": {
     "name": "Mountain Smithy Day 1",
@@ -855,7 +855,7 @@
     "active": false,
     "complete": false,
     "requiredItems": ["hasNorthAccess", "goronMask"],
-    "conditionalItems": [["bottle1"], ["hasFireArrows"], ["gohtRemains"]]
+    "conditionalItems": [["hasFireArrows"], ["gohtRemains"]]
   },
   "pathToSnowheadGrotto": {
     "name": "Path to Snowhead Grotto",
@@ -898,6 +898,13 @@
     "requiredItems": ["hasCoastAccess"],
     "conditionalItems": []
   },
+  "mikau": {
+    "name": "Mikau",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasCoastAccess", "songOfHealing"],
+    "conditionalItems": []
+  },
   "coastLedge": {
     "name": "Great Bay Coast Ledge",
     "active": false,
@@ -920,11 +927,11 @@
     "conditionalItems": []
   },
   "stoneTowerMap": {
-    "name": "Stone Tower Map",
+    "name": "Stone Tower Map Purchase",
     "active": false,
     "complete": false,
-    "requiredItems": ["hasProjectile"],
-    "conditionalItems": [["hasCoastAccess"], ["hasUpperIkanaAccess"]]
+    "requiredItems": [],
+    "conditionalItems": []
   },
   "beaverRace1": {
     "name": "Beaver Race #1",
@@ -1021,21 +1028,21 @@
     "name": "Pirate's Fortress Ext Corner Chest",
     "active": false,
     "complete": false,
-    "requiredItems": ["hasPirateFortressExteriorAccess"],
+    "requiredItems": ["hasPirateExteriorAccess"],
     "conditionalItems": []
   },
   "pfExtLogChest": {
     "name": "Pirate's Fortress Ext Log Chest",
     "active": false,
     "complete": false,
-    "requiredItems": ["hasPirateFortressExteriorAccess"],
+    "requiredItems": ["hasPirateExteriorAccess"],
     "conditionalItems": []
   },
   "pfExtSandChest": {
     "name": "Pirate's Fortress Ext Sand Chest",
     "active": false,
     "complete": false,
-    "requiredItems": ["hasPirateFortressExteriorAccess"],
+    "requiredItems": ["hasPirateExteriorAccess"],
     "conditionalItems": []
   },
   "pfSewerCage": {
@@ -1326,6 +1333,62 @@
     "active": false,
     "complete": false,
     "requiredItems": ["hasIkanaAccess", "hasLightArrows"],
+    "conditionalItems": []
+  },
+  "romaniRanchMapTwinIsland": {
+    "name": "",
+    "linkId": "romaniRanchMap",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasNorthAccess", "hasProjectile"],
+    "conditionalItems": []
+  },
+  "snowheadMapTwinIsland": {
+    "name": "",
+    "linkId": "snowheadMap",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasNorthAccess", "hasProjectile"],
+    "conditionalItems": []
+  },
+  "greatBayMapCoast": {
+    "name": "",
+    "linkId": "greatBayMap",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasCoastAccess", "hasProjectile"],
+    "conditionalItems": []
+  },
+  "stoneTowerMapCoast": {
+    "name": "",
+    "linkId": "stoneTowerMap",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasCoastAccess", "hasProjectile"],
+    "conditionalItems": []
+  },
+  "stoneTowerMapIkana": {
+    "name": "",
+    "linkId": "stoneTowerMap",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasUpperIkanaAccess", "hasProjectile"],
+    "conditionalItems": []
+  },
+  "clockTownMapIkana": {
+    "name": "",
+    "linkId": "clockTownMap",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["hasUpperIkanaAccess", "hasProjectile"],
+    "conditionalItems": []
+  },
+  "keatonMaskMountain": {
+    "name": "",
+    "linkId": "keatonQuiz",
+    "active": false,
+    "complete": false,
+    "requiredItems": ["gohtRemains", "keatonMask", "hasNorthAccess"],
     "conditionalItems": []
   }
 }

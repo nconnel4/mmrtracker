@@ -4,6 +4,7 @@ export type Check = {
   complete: boolean;
   requiredItems: string[];
   conditionalItems: string[][];
+  linkId?: string;
 };
 
 export type Checks = {

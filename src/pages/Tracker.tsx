@@ -11,15 +11,15 @@ export const Tracker = () => {
   const activeRegion = useAppSelector((state) => state.tracker.activeRegion);
 
   return (
-    <Flex>
+    <Flex maxHeight="100%" maxWidth="1500px" flexWrap="wrap">
       <Box flex="0 0 350px" p={3}>
         <ItemGrid />
       </Box>
-      <Box h="90vh" flex={1} p={3} overflowY="scroll">
+      <Box h="90vh" flex="1 1 300px" p={3} overflowY="scroll">
         {!activeRegion && <RegionList />}
         {activeRegion && <CheckList />}
       </Box>
-      <Box flex={2}>
+      <Box flex="1 0 600px">
         <Map />
       </Box>
     </Flex>
