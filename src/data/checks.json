@@ -122,11 +122,11 @@
     "name": "Mountain Smithy Day 1",
     "active": false,
     "complete": false,
-    "requiredItems": ["adultWallet", "hasNorthAccess", "canMeltIce"],
-    "conditionalItems": []
+    "requiredItems": ["adultWallet", "hasNorthAccess"],
+    "conditionalItems": [["bottle1"], ["hasFireArrows"], ["gohtRemains"]]
   },
   "mountainSmithDay2": {
-    "name": "mountain Smith Day 2",
+    "name": "Mountain Smithy Day 2",
     "active": false,
     "complete": false,
     "requiredItems": ["goldDust", "hasNorthAccess"],
